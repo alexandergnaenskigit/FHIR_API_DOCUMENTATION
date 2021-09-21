@@ -1,0 +1,5 @@
+id: paramount_api
+title: Paramount FHIR API
+url: http://hl7.org/fhir/us/core/
+description: Paramount FHIR API
+fhir: 4.0.0

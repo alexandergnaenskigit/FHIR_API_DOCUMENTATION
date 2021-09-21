@@ -1,0 +1,17 @@
+language: java
+before_install: echo $HOME
+
+script:
+  - echo "skipping tests"
+
+before_deploy:
+  - npm install
+  - java -jar "./node_modules/igpop/bin/igpop.jar" build "/igpop-vc"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: main

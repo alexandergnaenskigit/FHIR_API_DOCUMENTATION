@@ -1,0 +1,23 @@
+{
+  "name": "igpop-vc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FatherFrosttTest/igpop-vc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FatherFrosttTest/igpop-vc/issues"
+  },
+  "homepage": "https://github.com/FatherFrosttTest/igpop-vc#readme",
+  "dependencies": {
+    "igpop": "0.2.0",
+    "igpop-fhir-4.0.0": "^0.0.2-rc5"
+  }
+}
