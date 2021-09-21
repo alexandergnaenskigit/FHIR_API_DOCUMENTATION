@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FatherFrosttTest/igpop-vc.git"
+    "url": "git+https://github.com/hsfhirdocs/api_docs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FatherFrosttTest/igpop-vc/issues"
+    "url": "https://github.com/hsfhirdocs/api_docs-vc/issues"
   },
-  "homepage": "https://github.com/FatherFrosttTest/igpop-vc#readme",
+  "homepage": "https://github.com/hsfhirdocs/api_docs#readme",
   "dependencies": {
     "igpop": "0.2.0",
     "igpop-fhir-4.0.0": "^0.0.2-rc5"
