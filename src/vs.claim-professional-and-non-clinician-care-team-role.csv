@@ -1,0 +1,6 @@
+code, system, display, definition
+primary, http://terminology.hl7.org/CodeSystem/claimcareteamrole, Primary provider, The primary care provider.
+supervisor, http://terminology.hl7.org/CodeSystem/claimcareteamrole, Supervising Provider, Supervising care provider.
+performing, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Performing provider, The performing or rendering provider
+purchasedservice, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Purchased Service, A purchased service occurs when one provider purchases a service from another provider and then provides it to the patient, e.g. a diagnostic exam
+referring, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Referring, The referring physician

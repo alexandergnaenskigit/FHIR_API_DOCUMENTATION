@@ -1,0 +1,12 @@
+code, display, definition
+group, Group, An employee group
+subgroup, SubGroup, A sub-group of an employee group
+plan, Plan, A specific suite of benefits.
+subplan, SubPlan, A subset of a specific suite of benefits.
+class, Class, A class of benefits.
+subclass, SubClass, A subset of a class of benefits.
+sequence, Sequence, A sequence number associated with a short-term continuance of the coverage.
+rxbin, RX BIN, Pharmacy benefit manager's Business Identification Number.
+rxpcn, RX PCN, A Pharmacy Benefit Manager specified Processor Control Number.
+rxid, RX Id, A Pharmacy Benefit Manager specified Member ID.
+rxgroup, RX Group, A Pharmacy Benefit Manager specified Group number.

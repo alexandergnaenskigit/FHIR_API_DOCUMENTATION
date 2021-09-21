@@ -1,0 +1,43 @@
+description: This profile sets minimum expectations for the Encounter resource to record, search, and fetch basic encounter information for an individual patient.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      source: {type: uri, description: A uri that identifies the source system of the resource. , constant: http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter} 
+  identifier:
+    collection: true
+    type: Identifier
+    description: Identifier(s) by which this encounter is known
+    elements:
+      system: {type: uri, required: true, description: The namespace for the identifier value  }
+      value:  {type: string, required: true, description: The value that is unique }
+      type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier }   
+  subject:
+    required: true
+    type: Reference(US Core Patient Profile)
+    description: The patient or group present at the encounter
+  status:
+    required: true
+    type: code    
+    description: Current state of the encounter.
+    constant: finished
+    valueset: { id: 'encounter-status' }
+  type:
+    minItems: 1
+    collection: true
+    type: CodeableConcept    
+    description: Specific type of encounter.
+  reasonCode:
+    collection: true
+    type: CodeableConcept    
+    description: Coded reason the encounter takes place.   
+  class:
+    required: true
+    type: Coding    
+    description: Classification of patient encounter.
+    valueset: { id: 'act-encounter-code' }
+  period:
+    type: Period    
+    description: The start and end time of the encounter

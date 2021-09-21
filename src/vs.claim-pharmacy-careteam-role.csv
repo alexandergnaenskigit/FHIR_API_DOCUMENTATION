@@ -1,0 +1,3 @@
+code, system, display, definition
+primary, http://terminology.hl7.org/CodeSystem/claimcareteamrole, Primary provider, The primary care provider.
+prescribing, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Prescribing provider, The prescribing provider

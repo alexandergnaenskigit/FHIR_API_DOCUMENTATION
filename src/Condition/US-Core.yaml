@@ -1,0 +1,35 @@
+description: This profile sets minimum expectations for the Condition resource to record, search, and fetch a list of conditions associated with a patient. Defines constraints and extensions on the Condition resource for the minimal set of data to query and retrieve problems and health concerns information.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      source: {type: uri, description: A uri that identifies the source system of the resource. , constant: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition} 
+  category:
+    minItems: 1
+    collection: true
+    type: CodeableConcept
+    description: Category of condition
+    valueset: { id: 'us-core-condition-category' }
+  subject:
+    required: true
+    type: Reference(US Core Patient Profile)
+    description: Who has the condition?
+  onset:
+    union: [dateTime, Age, Period, Range, string]
+    description: Estimated or actual date, date-time, or age
+  encounter:
+    type: Reference(Encounter)
+    description: Encounter created as part of     
+  severity:
+    type: CodeableConcept
+    description: Subjective severity of condition
+  code:
+    required: true
+    type: CodeableConcept
+    description: Identification of the condition, problem or diagnosis    
+  note:
+    collection: true
+    type: Annotation
+    description: Additional information about the Condition

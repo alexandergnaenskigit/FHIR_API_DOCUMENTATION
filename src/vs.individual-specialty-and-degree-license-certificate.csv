@@ -1,0 +1,366 @@
+code, display
+701, Substance Abuse Program
+901, Female Pelvic Medicine
+1001, Allergy And Immunology
+1101, Hospital
+1701, Substance Abuse Program
+1801, Substance Abuse Program
+2001, Anesthesiology
+2002, Anesthesiology
+3001, Colon And Rectal Surgery
+3201, Infusion Services
+3301, Sleep Medicine
+4001, Dermatology
+4002, Dermatology
+4101, Pathology
+5001, Family Medicine
+5002, Family Medicine
+5501, Pediatrics
+5601, Pediatrics
+5701, Pediatrics
+5801, Pediatrics
+5901, Pediatrics
+6001, Internal Medicine
+6002, Internal Medicine
+6101, Pediatrics
+6201, Cardiology
+6301, Endocrinology
+6401, Gastroenterology
+6501, Hematology/Oncology
+6601, Infectious Disease
+6701, Nephrology
+6801, Pulmonary Diseases
+6901, Rheumatology
+7001, Neurosurgery
+7101, Spinal Cord Injury Medicine
+7201, Pediatrics
+7301, Pediatrics
+7401, Toxicology
+7501, Undersea and Hyperbaric Medicine
+7601, Pediatrics
+8001, Nuclear Medicine
+8301, Neurology
+8401, Radiology Center
+8501, Neurology
+8901, Obstetrics & Gynecology
+8902, Midwifery
+8903, Obstetrics & Gynecology
+8904, Female Pelvic Medicine
+9201, Maternal Services
+9301, Maternal Services
+9302, Maternal Services
+9501, Nutrition
+10001, Ophthalmology
+10002, Ophthalmology
+10003, Ophthalmology
+10004, Ophthalmology
+10101, Pediatrics
+11001, Orthopedic Surgery
+11101, Hand Surgery
+11201, Hand Surgery
+11301, Hand Surgery
+11401, Plastic Surgery
+12001, Ear; Nose; & Throat (ENT)/Otolaryngology
+12101, Pediatrics
+13101, Blood Banking
+13501, Pathology
+13601, Pathology
+13701, Hematology/Oncology
+13801, Pathology
+13901, Microbiology
+14001, Pathology
+14101, Pathology
+14201, Pathology
+14301, Pathology
+14401, Hepatology
+14402, Hepatology
+14601, Pathology
+14701, Pediatrics
+14901, Pediatrics
+15001, Pediatrics
+15002, Pediatrics
+15101, Pediatrics
+15201, Pediatrics
+15202, Pediatrics
+15301, Pediatrics
+15401, Pediatrics
+15501, Maternal Services
+15503, Maternal Services
+15601, Pediatrics
+15701, Pediatrics
+16001, Physical Medicine And Rehabilitation
+16101, Pediatrics
+16102, Pediatrics
+16201, Osteopathic Manipulative Medicine
+16202, Chiropractic
+16301, Pediatrics
+16401, Critical Care Medicine
+16501, Critical Care Medicine
+16502, Critical Care Medicine
+16701, Critical Care Medicine
+17001, Plastic Surgery
+17002, Hand Surgery
+18201, Preventative Medicine
+18301, Occupational Therapy
+18401, Public Health
+18501, Aerospace Medicine
+18701, Genetics
+18801, Genetics
+18901, Pathology
+19001, Pain Management
+19101, Pediatrics
+19201, Psychiatry
+19301, Pediatrics
+19401, Neurology
+19402, Neurology
+19501, Neurology
+19701, Geriatric Psychiatry
+19801, Addiction Psychiatry
+19901, Neurology
+20001, Radiology Center
+20002, Radiology Center
+20101, Radiology Center
+20201, Radiology Center
+20501, Radiology Center
+20801, Radiology Center
+21001, General Surgery
+21002, Breast Surgery
+21003, Head And Neck Surgery
+21004, Bariatric Surgery
+21005, General Surgery
+21101, Hospitalist
+21102, Pediatrics
+22001, Thoracic Surgery
+22003, Thoracic Surgery
+23001, Urology
+23101, Pediatrics
+24001, Neurology
+24101, Oncology
+24102, Surgical Oncology
+24201, Obstetrics & Gynecology
+24301, Vascular Surgery
+24401, Radiation Oncology
+24501, Pediatrics
+24601, Radiology Center
+24901, HIV Services
+25001, Emergency Medicine
+25401, Case Management
+28001, Chiropractic
+28101, Social Worker
+28201, Substance Abuse Counselor
+28201, Substance Abuse Counselor
+28301, Mental Health Counselor
+28302, Mental Health Counselor
+29001, Acupuncture
+30001, Physical Therapy
+30101, Occupational Therapy
+30201, Speech Therapy
+30301, HIV Services
+30401, Physical Medicine And Rehabilitation
+30501, Pediatrics
+30503, Pediatrics
+30505, Pediatrics
+30506, Pediatrics
+30701, Durable Medical Equipment (DME)
+30801, HIV Services
+30901, Substance Abuse Program
+31001, Mental Health Clinic
+31201, Mental Health Day Treatment
+31301, Partial Hospitalization
+31401, Intensive Psychiatric Rehabilitation Treatment Program
+31501, Mental Health Clinic
+31701, Mental Health Day Treatment
+31801, Partial Hospitalization
+31901, Intensive Psychiatric Rehabilitation Treatment Program
+32101, Diagnostic And Treatment Center (D&TC)
+32201, Mental Health Clinic
+32601, Mental Health Residential Services
+32801, Mental Health Outpatient Services
+32901, Mental Health Residential Services
+33001, Pediatrics
+35101, General Dentistry
+35501, AIDS Adult Day Health Care
+35801, Traumatic Brain Injury Services
+36001, Substance Abuse Program
+36501, Mental Health Residential Services
+37101, Case Management
+37501, Mental Health Outpatient Services
+37601, Mental Health Outpatient Services
+40001, Microbiology
+40501, Federally Qualified Health Center (FQHC)
+43301, SEROLOGY ROUTINE
+48001, Hematology/Oncology
+48101, Hematology/Oncology
+48201, Hematology/Oncology
+48501, Hematology/Oncology
+51001, Toxicology
+51501, Toxicology
+51601, Endocrinology
+53001, Pathology
+54001, Pathology
+56001, Genetics
+56101, Blood Transfusion
+56201, Blood Transfusion
+57001, Other
+57901, Pediatrics
+59901, Laboratory
+60001, Sports Medicine
+60101, Sports Medicine
+60201, Sports Medicine
+60301, Pediatrics
+60401, Sports Medicine
+61501, Personal Emergency Response System (PERS)
+61601, Inpatient Psychiatric Center
+62001, Geriatrics
+62101, Geriatrics
+63001, Pain Management
+64001, Audiology/Hearing Aids
+65001, Vascular Surgery
+65101, Cardiology
+65201, Cardiology
+65301, Cardiology
+65501, Skilled Nursing Facility (SNF)
+65701, Skilled Nursing Facility (SNF)
+65901, Skilled Nursing Facility (SNF)
+66001, Skilled Nursing Facility (SNF)
+66101, Social and Environmental Supports
+66201, Social Adult Day Care
+66301, Skilled Nursing Facility (SNF)
+66401, Adult Day Health Care
+66501, Certified Home Health Agency (CHHA)
+66601, Assisted Living
+66701, Home Delivered And Congregate Meals
+66801, Home Health Aide
+66901, Hospice
+67001, Ambulance
+67101, Non-Emergency Transportation
+67201, Licensed Home Care Services Agency (LHCSA)
+67301, Personal Care Services
+67401, Respiratory Therapy
+67501, Consumer Directed Personal Assistance Services (CDPAS)
+67601, Consumer Directed Personal Assistance Services (CDPAS)
+68001, Private Duty Nursing
+71401, Optometry
+71501, Optometry
+71601, Optometry
+73801, Mobile Radiology
+73901, Laboratory
+74001, Maternal Services
+74101, Transplant Surgery
+74901, Substance Abuse Program
+76001, Pharmacy
+76201, Licensed Home Care Services Agency (LHCSA)
+77501, Other
+77601, General Practice
+77801, Podiatry
+77802, Podiatry
+77901, Nurse Practitioner
+77902, Physician Assistant
+77904, Geriatrics
+77906, Psychiatry
+78001, Psychology
+78002, Psychology
+78003, Psychology
+78101, Social Worker
+78201, Midwifery
+79001, Respite
+79901, Other
+80001, General Dentistry
+80101, Orthodontics
+80201, Endodontics
+80301, Oral Surgery
+80401, Pediatrics
+80501, Prosthodontics
+80601, Periodontics
+80801, Oral Surgery
+80901, Anesthesiology
+81101, Oral Surgery
+81501, General Dentistry
+81601, Assertive Community Treatment (ACT)
+81701, Durable Medical Equipment (DME)
+81801, Community Integration Counseling
+81901, Community Transitional Services
+82001, Environmental Modifications
+82101, Freestanding Birthing Centers
+82201, Independent Living Skills
+82301, Urgent Care Center
+82501, Moving Assistance
+82601, Palliative Care
+82701, Peer Delivered Services
+82801, Peer Mentoring Services
+82901, Personalized Recovery Oriented Services (PROS)
+83001, Positive Behavioral Intervention and Supports
+83101, Social Adult Day Care Transportation
+83201, Structured Day Program
+83301, Telehealth
+83401, Home and Community Support Services
+85101, Optometry
+85401, Habilitation Support Services
+86201, Other
+88901, Other
+89901, Hospital
+90101, Emergency Room
+90201, Endocrinology
+90301, Nutrition
+90401, Obstetrics & Gynecology
+90501, Obstetrics & Gynecology
+90502, Obstetrics & Gynecology
+90601, Family Planning
+90901, Nutrition
+91001, Oral Surgery
+91101, General Dentistry
+91201, Orthodontics
+91301, Dialysis Center
+91401, Diagnostic And Treatment Center (D&TC)
+91501, Allergy And Immunology
+91801, Podiatry
+91901, Optometry
+92001, Physical Therapy
+92001, Physical Therapy
+92101, Speech Therapy
+92201, Substance Abuse Program
+92301, Occupational Therapy
+92401, Physical Medicine And Rehabilitation
+92701, Cardiology
+92702, Cardiology
+92704, Cardiology
+92801, Cardiology
+93001, Gastroenterology
+93101, Neurology
+93201, Neurosurgery
+93201, Neurosurgery
+93401, Radiation Oncology
+93501, Ear; Nose; & Throat (ENT)/Otolaryngology
+93701, Pediatrics
+94301, Pediatrics
+94401, Pediatrics
+94501, Psychiatry
+94901, Substance Abuse Program
+95001, Orthopedic Surgery
+95101, General Surgery
+95201, General Surgery
+95401, Nephrology
+95601, Dermatology
+95801, Ophthalmology
+96401, Psychiatry
+96701, Speech Therapy
+96901, Durable Medical Equipment (DME)
+97001, Skilled Nursing Facility (SNF)
+97101, Mental Health Clinic
+97201, Mental Health Day Treatment
+97301, Mental Health Day Treatment
+97401, Mental Health Clinic
+97501, Mental Health Day Treatment
+97601, Mental Health Day Treatment
+97801, Diagnostic And Treatment Center (D&TC)
+98101, Diagnostic And Treatment Center (D&TC)
+98301, Mental Health Clinic
+98401, Substance Abuse Program
+98601, Substance Abuse Program
+98701, Substance Abuse Program
+98801, Substance Abuse Program
+99201, Comprehensive Psychiatric Emergency Program (CPEP)
+99301, Ambulatory Surgery Center
+99601, Audiology/Hearing Aids
+99901, Other
+99902, Other

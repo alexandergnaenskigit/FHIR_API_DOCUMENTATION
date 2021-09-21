@@ -1,0 +1,2 @@
+description: Indicates the status of the care team.
+system: http://hl7.org/fhir/ValueSet/care-team-status

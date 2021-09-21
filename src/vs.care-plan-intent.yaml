@@ -1,0 +1,2 @@
+description: Codes indicating the degree of authority/intentionality associated with a care plan.
+system: http://hl7.org/fhir/ValueSet/care-plan-intent

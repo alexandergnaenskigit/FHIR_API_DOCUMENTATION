@@ -1,0 +1,2 @@
+description: Example codes indicating the category a care plan falls within. Note that these are in no way complete and might not even be appropriate for some uses.
+system: http://hl7.org/fhir/ValueSet/care-plan-category

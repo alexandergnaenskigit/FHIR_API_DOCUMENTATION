@@ -1,0 +1,59 @@
+description: Demographics and other administrative information about an individual or animal receiving care or other health-related services.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+  name:
+    type: HumanName
+    collection: true
+    description: A name associated with the patient
+  active: 
+    type: boolean
+    description: Whether this patient's record is in active use     
+  address:
+    collection: true
+    type: Address
+    description: An address for the individual
+    elements:
+      type: {type: code, description: The type of an address, valueset: { id: 'address-type' }, constant : physical} 
+      line: {type: string, collection: true, maxItems: 4, description: Street name, number, direction & P.O. Box etc. }
+      city: {type: string, description: Name of city, town etc. }
+      state: {type: string, description: Sub-unit of country. }
+      postalCode: {type: string, description: US Zip Codes. }
+  telecom:
+    collection: true
+    type: ContactPoint
+    description: A contact detail for the individual
+    elements:
+      value: {string: code, description: The actual contact point details} 
+      system: {type: code, description: Telecommunications form for contact point., valueset: { id: 'contact-point-system' } }
+  identifier:
+    collection: true
+    type: Identifier
+    description: An identifier that applies to this person in this role.
+    elements:
+      system: {type: uri, required: true, description: The namespace for the identifier value  }
+      value: {type: string, required: true, description: The value that is unique }       
+  deceased:
+    type: dateTime
+    description: Indicates if the individual is deceased or not
+  communication:
+    collection: true
+    type: BackboneElement
+    valueset: { id: 'languages' }
+    description: A language which may be used to communicate with the patient about his or her health
+    elements:
+      code: {language: CodeableConcept, required: true,  valueset: { id: 'languages' }, description: The language which can be used to communicate with the patient about his or her health. }
+      preferred: {type: boolean, description: Language preference indicator. }
+  gender:
+    type: code
+    valueset: { id: 'administrative-gender' }
+    description: The gender that the patient is considered to have for administration and record keeping purposes.
+  birthDate:
+    type: date
+    description: The date of birth for the individual.
+  generalPractitioner:
+    type: Reference
+    collection: true
+    description: Patient's nominated primary care provider.

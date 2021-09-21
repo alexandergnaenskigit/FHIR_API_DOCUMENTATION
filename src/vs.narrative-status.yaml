@@ -1,0 +1,2 @@
+system: http://hl7.org/fhir/narrative-status
+definition: The status of a resource narrative.

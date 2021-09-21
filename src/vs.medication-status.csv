@@ -1,0 +1,4 @@
+code, display, definition
+active, Active, The medication is available for use.
+inactive, Inactive, The medication is not available for use.
+entered-in-error, Entered in Error, The medication was entered in error.

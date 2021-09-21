@@ -1,0 +1,25 @@
+description: This profile sets minimum expectations for the Goal resource to record, search, and fetch Goal information associated with a patient. Defines constraints and extensions on the Goal resource for the minimal set of data to query and retrieve a patient's goal(s).
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      source: {type: uri, description: A uri that identifies the source system of the resource. , constant: http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal} 
+  subject:
+    required: true
+    type: Reference(US Core Patient Profile)
+    description: Who this goal is intended for
+  lifecycleStatus:
+    required: true
+    type: code    
+    description: Current status of the goal.
+    valueset: { id: 'goal-status' }
+  description:
+    required: true
+    type: CodeableConcept    
+    description: Code or text describing goal.
+  note:
+    collection: true
+    type: Annotation    
+    description: Comments about the goal 

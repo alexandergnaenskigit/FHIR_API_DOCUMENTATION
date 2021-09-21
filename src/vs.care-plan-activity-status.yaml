@@ -1,0 +1,2 @@
+description: Codes that reflect the current state of a care plan activity within its overall life cycle.
+system: http://hl7.org/fhir/ValueSet/care-plan-activity-status

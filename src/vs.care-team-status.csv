@@ -1,0 +1,6 @@
+code, display, definition
+proposed, Proposed, The care team has been drafted and proposed, but not yet participating in the coordination and delivery of patient care.
+active, Active, The care team is currently participating in the coordination and delivery of care.
+suspended, Suspended, The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care.
+inactive, Inactive, The care team was, but is no longer, participating in the coordination and delivery of care.
+entered-in-error, Entered in Error, The care team should have never existed.

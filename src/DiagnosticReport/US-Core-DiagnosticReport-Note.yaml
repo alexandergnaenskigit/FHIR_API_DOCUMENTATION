@@ -1,0 +1,38 @@
+description: This profile sets minimum expectations for searching and fetching Diagnostic Reports and Notes using the DiagnosticReport resource. Defines constraints and extensions on the DiagnosticReport resource for the minimal set of data to query and retrieve diagnostic reports associated with clinical notes for a patient
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      source: {type: uri, description: A uri that identifies the source system of the resource. , constant: http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note} 
+  subject:
+    required: true
+    type: Reference(US Core Patient Profile)
+    description: The subject of the report - usually, but not always, the patient.
+  encounter:
+    type: Reference(Encounter)
+    description: Encounter created as part of
+  category:
+    collection: true
+    minItems: 1
+    type: CodeableConcept   
+    description: Service category   
+  code:
+    required: true
+    type: CodeableConcept    
+    description: US Core Report Code 
+  effective:
+    required: true
+    union: [dateTime, Period]   
+    description: Clinically relevant time/time-period for report
+  presentedForm:
+    collection: true
+    type: Attachment   
+    description: Entire report as issued
+  status:
+    required: true
+    type: code    
+    description: US Core Report Status
+    constant: final
+    valueset: { id: 'diagnostic-report-status' }

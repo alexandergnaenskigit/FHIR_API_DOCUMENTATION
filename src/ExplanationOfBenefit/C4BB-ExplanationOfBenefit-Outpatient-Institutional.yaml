@@ -1,0 +1,102 @@
+description: This profile is used for Explanation of Benefits (EOBs) based on claims submitted by clinics, hospitals, skilled nursing facilities and other institutions for outpatient services, which may include including the use of equipment and supplies, laboratory services, radiology services and other charges. Outpatient claims are submitted for services rendered at an institution that are not part of an overnight stay. The claims data is based on the institutional claim form UB-04, submission standards adopted by the Department of Health and Human Services.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional } 
+  extension:
+    collection: true
+    type: Extension
+    description: Additional content defined by implementations
+  identifier:
+    type: Identifier
+    description: Business Identifier for the resource  
+    elements:
+      system: {type: uri, required: true, description: The namespace for the identifier value  }
+      value:  {type: string, required: true, description: The value that is unique }
+      type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier }  
+  status:
+    required: true
+    type: code
+    description: A code specifying the state of the resource instance.
+    valueset: { id: 'explanationofbenefit-status' }
+  type:
+    type: CodeableConcept
+    required: true
+    description: Category or discipline
+    constant: institutional
+    valueset: { id: 'claim-type' }
+  use:
+    required: true
+    type: code
+    description: Complete, proposed, exploratory, other.
+    constant: claim
+    valueset: { id: 'claim-use' }
+  patient:
+    required: true
+    type: Reference(C4BB Patient)
+    description: The recipient of the products and services
+  created:
+    required: true
+    type: dateTime
+    description: Response creation date
+  insurer:
+    required: true
+    type: Reference(C4BB Organization)
+    description: Party responsible for reimbursement
+  provider:
+    required: true
+    type: Reference(C4BB Organization)
+    description: Party responsible for the claim
+  outcome:
+    required: true
+    type: code
+    description: The result of the claim processing.
+    valueset: { id: 'remittance-outcome' }
+  careTeam:
+    collection: true
+    type: BackboneElement
+    description: Care Team members.  
+    elements:
+      sequence: {required: true, type: positiveInt, description: Order of care team.} 
+      provider: {required: true, type: Reference(C4BB Organization | C4BB Practitioner), description: Practitioner or organization. }
+      role: {required: true, type: CodeableConcept, description: Function within the team., valueset: { id: 'claim-institutional-care-team-role' } }      
+  diagnosis:
+    required: true
+    collection: true
+    type: BackboneElement
+    description: Pertinent diagnosis information.  
+    elements:
+      sequence: {required: true, type: positiveInt, description: Diagnosis instance identifier.} 
+      diagnosis: {required: true, type: CodeableConcept, description: Nature of illness or problem. , valueset: { id: 'diagnosis-codes' }}
+      type: {required: true, type: CodeableConcept, description: Timing or nature of the diagnosis. , valueset: { id: 'c4bb-claim-outpatient-institutional-diagnosis-type' } }    
+  insurance:
+    required: true
+    collection: true
+    type: BackboneElement
+    description: Patient insurance information.  
+    elements:
+      focal: {required: true, type: boolean, description: Coverage to be used for adjudication., constant: true} 
+      coverage: {required: true, type: Reference(C4BB Coverage), description: Insurance information. }
+  item:
+    collection: true
+    type: BackboneElement
+    description: Supporting information.  
+    elements:
+      sequence: {required: true, type: positiveInt, description: Item instance identifier.} 
+      diagnosisSequence: {type: positiveInt, description: Applicable diagnoses.} 
+      extension: {collection: true, type: Extension, description: Additional content defined by implementations.} 
+      serviced: {type: date, description: Date or dates of service or product delivery.} 
+      category: {type: CodeableConcept, description: Benefit classification., valueset: { id: 'ex-benefitcategory-toscode' } }
+      productOrService: {required: true, type: CodeableConcept, description: Billing, service, product, or drug code. , valueset: { id: 'procedure-codes' }} 
+      adjudication: {collection: true, type: BackboneElement, description: Adjudication details., elements: {category: {required: true, type: CodeableConcept, description: Type of adjudication information, valueset: { id: 'c4bb-adjudication-category-discriminator' }}, amount: {type: Money, description: Monetary amount}} }    
+  total:
+    minItems: 2
+    collection: true
+    type: BackboneElement
+    description: Pertinent diagnosis information.  
+    elements:
+      category: {required: true, type: CodeableConcept, description: Type of adjudication information., valueset: { id: 'c4bb-total-category-discriminator' }} 
+      amount: {required: true, type: Money, description: Financial total for the category. }

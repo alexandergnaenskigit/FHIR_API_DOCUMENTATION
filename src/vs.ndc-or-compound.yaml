@@ -1,0 +1,2 @@
+system: http://hl7.org/fhir/us/carin-bb/ValueSet/FDANDCOrCompound
+description: Values will be the NDC Codes when the Compound Code value is 0 or 1. When the Compound Code value = 2, the value will be the literal, ‘compound’

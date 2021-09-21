@@ -1,0 +1,43 @@
+description: The MedicationRequest resource is used to request or order medication for a subject. It may also be used to report a medication request or order from one organization or source to another. When requesting supplies or devices when there is a patient focus or instructions regarding their use, SupplyRequest or DeviceRequest should be used instead. When reporting on the usage of a medication by a patient, the MedicationStatementt resource should be used.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+  identifier:
+    collection: true
+    type: Identifier
+    description: Business Identifier for the coverage 
+    elements:
+      system: {type: uri, required: true, description: The namespace for the identifier value  }
+      value:  {type: string, required: true, description: The value that is unique }
+      type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier }    
+  status:
+    required: true
+    type: code
+    description: A code specifying the current state of the order.
+    valueset: { id: 'medicationrequest-status' }
+    constant: completed
+  intent:
+    type: code
+    description: Whether the request is a proposal, plan, or an original order.
+    constant: plan
+    valueset: { id: 'medicationrequest-intent' }
+  authoredOn:
+    type: dateTime
+    description: When request was initially authored   
+  requester:
+    type: Reference(Practitioner | PractitionerRole | Organization | Patient | RelatedPerson | Device)
+    description: Who/What requested the Request   
+  subject:
+    required: true
+    type: Reference(Patient | Group)
+    description: Who or group medication request is for
+  medication:
+    required: true
+    union: [CodeableConcept, Reference(Medication)]
+    description: Medication to be taken
+  dosageInstruction:
+    collection: true
+    type: Dosage
+    description: How the medication should be taken

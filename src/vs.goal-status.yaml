@@ -1,0 +1,2 @@
+description: Codes that reflect the current state of a goal and whether the goal is still being targeted
+system: http://hl7.org/fhir/ValueSet/goal-status

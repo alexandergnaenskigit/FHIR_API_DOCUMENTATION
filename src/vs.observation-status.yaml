@@ -1,0 +1,2 @@
+system: http://hl7.org/fhir/observation-status
+description: Codes providing the status of an observation.

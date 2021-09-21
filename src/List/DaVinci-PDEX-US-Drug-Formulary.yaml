@@ -1,0 +1,29 @@
+description: A health plan which contains links to administrative information, a list of formulary drugs covered under that plan, and a definition of drug tiers and their associated cost-sharing models.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/davinci-drug-formulary/StructureDefinition/usdf-CoveragePlan }
+      source: {type: uri, description: A uri that identifies the source system of the resource. , constant: https://www.villagecare.org/Drug_Formulary } 
+  extension:
+    collection: true
+    type: Extension
+    minItems: 4
+    description: Additional content defined by implementations.
+    elements:
+      url: {type: uri, required: true, description: identifies the meaning of the extension  }
+      value[x]:  {description: Value of extension } 
+  mode:  
+    type: code
+    required: true
+    description: The processing mode that applies to this list.
+    valueset: { id: 'list-mode' }
+    constant: working
+  status:
+    type: code
+    required: true
+    description: The current state of the list.
+    valueset: { id: 'list-status' }
+    constant: current

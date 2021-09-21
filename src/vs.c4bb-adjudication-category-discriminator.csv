@@ -1,0 +1,20 @@
+code, system, display, definition
+submitted, http://terminology.hl7.org/CodeSystem/adjudication, Submitted Amount, The total submitted amount for the claim or group or line item.
+copay, http://terminology.hl7.org/CodeSystem/adjudication, CoPay, Patient Co-Payment
+eligible, http://terminology.hl7.org/CodeSystem/adjudication, Eligible Amount, Amount of the change which is considered for adjudication.
+deductible, http://terminology.hl7.org/CodeSystem/adjudication, Deductible, Amount deducted from the eligible amount prior to adjudication.
+benefit, http://terminology.hl7.org/CodeSystem/adjudication, Benefit Amount, Amount payable under the coverage
+coinsurance, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Coinsurance, The amount the insured individual pays, as a set percentage of the cost of covered medical services, as an out-of-pocket payment to the provider. Example: Insured pays 20% and the insurer pays 80%.
+noncovered, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Noncovered, The portion of the cost of this service that was deemed not eligible by the insurer because the service or member was not covered by the subscriber contract.
+priorpayerpaid, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Prior payer paid, The reduction in the payment amount to reflect the carrier as a secondary payor.
+paidbypatient, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Paid by patient, The amount paid by the patient at the point of service.
+paidtopatient, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Paid to patient, paid to patient
+paidtoprovider, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Paid to provider, The amount paid to the provider.
+memberliability, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Member liability, The amount of the member's liability.
+discount, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Discount, The amount of the discount
+drugcost, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudication, Drug cost, Price paid for the drug excluding mfr or other discounts. It typically is the sum of the following components: ingredient cost, dispensing fee, sales tax, and vaccine administration
+innetwork, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus, In Network, Indicates the claim or claim line was paid in network. This does not indicate the contracting status of the provider
+outofnetwork, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus, Out Of Network, Indicates the claim or claim line was paid out of network. This does not indicate the contracting status of the provider
+other, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBPayerAdjudicationStatus, Other, Indicates other network status or when a network does not apply
+allowedunits, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator, allowed units, defines the adjudication slice to define allowed units
+denialreason, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBAdjudicationDiscriminator, Denial Reason, defines the adjudication slice to identify the denial reason

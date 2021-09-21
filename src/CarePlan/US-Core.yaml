@@ -1,0 +1,52 @@
+description: This profile sets minimum expectations for the CarePlan resource to record, search, and fetch assessment and plan of treatment data associated with a patient. Defines constraints and extensions on the CarePlan resource for the minimal set of data to query and retrieve a patient's Care Plan.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      source: {type: uri, description: A uri that identifies the source system of the resource. , constant: http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan} 
+  text:
+    required: true
+    type: Narrative    
+    description: Text summary of the resource, for human interpretation
+    elements:
+      status: {type: code, required: true, description: The status of a resource narrative., constant: generated , valueset: { id: 'narrative-status' } }
+      div: {type: xhtml, required: true, description: Limited xhtml content } 
+  status:
+    required: true
+    type: code
+    description: Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record.
+    constant: active
+    valueset: { id: 'request-status' }
+  intent:
+    required: true
+    type: code
+    description: Codes indicating the degree of authority/intentionality associated with a care plan
+    constant: plan
+    valueset: { id: 'care-plan-intent' }
+  category:
+    minItems: 1
+    collection: true
+    type: CodeableConcept
+    description: Type of plan
+    constant: assess-plan
+    valueset: { id: 'care-plan-category' }
+  subject:
+    required: true
+    type: Reference(US Core Patient Profile)
+    description: Who the care plan is for.
+  encounter:
+    type: Reference(Encounter)
+    description: Encounter created as part of 
+  goal:
+    collection: true
+    type: Reference(Goal)
+    description: Desired outcome of plan
+  activity:
+    collection: true
+    type: BackboneElement
+    description: Action to occur as part of plan    
+    elements:
+      detail: {type: BackboneElement, description: In-line definition of activity., elements: {status: {required:true, type: code, description: Codes that reflect the current state of a care plan activity within its overall life cycle., constant: scheduled , valueset: { id: 'care-plan-activity-status' }}, description: {type: string, description: CExtra info describing activity to perform.}} }
+ 

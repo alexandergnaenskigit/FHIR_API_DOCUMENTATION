@@ -1,0 +1,55 @@
+description: Drug information which is part of a formulary.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/davinci-drug-formulary/StructureDefinition/usdf-FormularyDrug }
+      source: {type: uri, description: A uri that identifies the source system of the resource. , constant: https://www.villagecare.org/Drug_Formulary } 
+  extension:
+    collection: true
+    type: Extension
+    minItems: 2
+    description: Additional content defined by implementations.
+    elements:
+      url: {type: uri, required: true, description: identifies the meaning of the extension  }
+      value[x]:  {description: Value of extension } 
+  identifier:
+    collection: true
+    type: Identifier
+    description: Identifies this organization across multiple systems.
+    elements:
+      system: {type: uri, description: The namespace for the identifier value  }
+      value: {type: string, description: The value that is unique }
+      type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier } 
+  text:
+    type: Narrative
+    description: Text summary of the resource, for human interpretation.
+    elements:
+      status: {type: code, required: true, valueset: { id: 'narrative-status' }, description: The status of the narrative  }
+      div: {type: code, required: true, description: Limited xhtml content } 
+  code:
+    type: CodeableConcept
+    required: true
+    description: Codes that identify this medication. 
+    valueset: { id: 'us-core-medication-codes' }
+  doseForm: 
+    type: CodeableConcept
+    description: A coded concept defining the form of a medication.
+  intendedRoute:
+    type: CodeableConcept
+    collection: true
+    description: The intended or approved route of administration.
+  associatedMedication:
+    type: Reference
+    collection: true
+    description: A medication resource that is associated with this medication.
+  productType:
+    type: CodeableConcept
+    collection: true
+    description: Category of the medication or product.
+  synonym:
+    type: string
+    collection: true
+    description: Additional names for a medication.

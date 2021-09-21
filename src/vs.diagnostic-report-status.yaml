@@ -1,0 +1,2 @@
+system: http://hl7.org/fhir/diagnostic-report-status
+description: The status of the diagnostic report.

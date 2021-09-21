@@ -1,0 +1,2 @@
+description: MedicationRequest Intent Codes
+system: http://hl7.org/fhir/CodeSystem/medicationrequest-intent

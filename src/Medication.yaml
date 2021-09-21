@@ -1,0 +1,15 @@
+description: This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.
+
+elements:
+
+  code:
+    type: CodeableConcept
+    description: Codes that identify this medication. 
+    valueset: { id: 'us-core-medication-codes' }
+  status: 
+    type: code
+    description: A code to indicate if the medication is in active use.
+    valueset: { id: 'medication-status' }
+  form:
+    type: CodeableConcept
+    description: Describes the form of the item. Powder; tablets; capsule.

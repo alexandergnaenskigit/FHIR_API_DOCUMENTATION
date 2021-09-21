@@ -1,0 +1,68 @@
+description: Data that reflect a payer’s coverage that was effective as of the date of service or the date of admission of the claim.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage } 
+  identifier:
+    collection: true
+    type: Identifier
+    description: Business Identifier for the coverage 
+    elements:
+      system: {type: uri, required: true, description: The namespace for the identifier value  }
+      value:  {type: string, required: true, description: The value that is unique }
+      type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier }    
+  status:
+    required: true
+    type: code
+    description: A code specifying the state of the resource instance.
+    valueset: { id: 'fm-status' }
+  type:
+    type: CodeableConcept
+    description: The type of insurance - public health, worker compensation; private accident, auto, private health, etc.) or a direct payment by an individual or organization.
+    constant: HIP
+    valueset: { id: 'coverage-type' }
+  policyHolder:
+    type: Reference(Patient | RelatedPerson | Organization)
+    description: Owner of the policy
+  subscriber:
+    type: Reference(Patient | RelatedPerson)
+    description: Subscriber to the policy
+  subscriberId:
+    required: true
+    type: string
+    description: ID assigned to the subscriber
+  beneficiary:
+    required: true
+    type: Reference(C4BB Patient)
+    description: Plan beneficiary
+  dependent:
+    type: string
+    description: Dependent number
+    constant: '01'
+  relationship:
+    required: true
+    type: CodeableConcept
+    description: Beneficiary relationship to the subscriber
+    valueset: { id: 'subscriber-relationship' }
+  period:
+    type: Period
+    description: Coverage start and end dates
+  payor:
+    collection: true
+    minItems: 1
+    type: Reference(C4BB Organization)
+    description: Issuer of the policy
+  network:
+    type: string
+    description: Insurer network 
+  class:
+    collection: true
+    type: BackboneElement
+    description: Additional coverage classifications.  
+    elements:
+      type: {required: true, type: CodeableConcept, description: Type of class such as 'group' or 'plan'., valueset: { id: 'coverage-class' }} 
+      value: {required: true, type: string, description: Value associated with the type. }
+      name: {type: string, description: Human readable description of the type and value. }

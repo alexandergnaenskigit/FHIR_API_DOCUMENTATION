@@ -1,0 +1,27 @@
+code, system, display
+PROVIDER_ID, http://terminology.hl7.org/CodeSystem/v2-0203, Provid
+IRS, http://terminology.hl7.org/CodeSystem/v2-0203, IRS
+NPI, http://terminology.hl7.org/CodeSystem/v2-0203, NPI
+LOCATION, http://terminology.hl7.org/CodeSystem/v2-0203, LOCATION
+HEALTHCARE_SERVICE, http://terminology.hl7.org/CodeSystem/v2-0203, HEALTHCARE SERVICE
+PRACTITIONER_ROLE, http://terminology.hl7.org/CodeSystem/v2-0203, PRACTITIONER ROLE
+NETWORK_ID, http://terminology.hl7.org/CodeSystem/v2-0203, NETWORK ID
+NABP, http://terminology.hl7.org/CodeSystem/v2-0203, NABP
+TAX, http://terminology.hl7.org/CodeSystem/v2-0203, TAX
+STATE_LICENSE, http://terminology.hl7.org/CodeSystem/v2-0203, SL
+OTHER, http://terminology.hl7.org/CodeSystem/v2-0203, Other
+C4BB_NPI, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, npi
+C4BB_NABP, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, nabp
+MEMBER_ID, http://terminology.hl7.org/CodeSystem/v2-0203, MB
+SOCIAL_SECURITY_NUMBER, http://terminology.hl7.org/CodeSystem/v2-0203, SS
+MEDICAL_RECORD_NUMBER, http://terminology.hl7.org/CodeSystem/v2-0203, MR
+UNIQUE_MEMBER_ID, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, um
+PATIENT_ACCOUNT_NUMBER, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, pat
+CORPORATE_IDENTIFICATION_NUMBER, https://www.villagecare.org, CIN
+PRESCRIPTION_NUMBER, http://terminology.hl7.org/CodeSystem/v2-0203, PRESCRIPTION_NUMBER
+UNIQUE_CLAIM_ID, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, uc
+COVERAGE_ID, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, COV
+MEDICARE_ID, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, MC
+MEDICAID_NUMBER, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, MIN
+PROCEDURE_ID, http://terminology.hl7.org/CodeSystem/v2-0203, PI
+ASSESSMENT_ID, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType, AI

@@ -1,0 +1,5 @@
+code, display, definition
+active, Active, The resource instance is currently in-force.
+cancelled, Cancelled, The resource instance is withdrawn, rescinded or reversed.
+draft, Draft, A new resource instance the contents of which is not complete.
+entered-in-error, Entered In Error, The resource instance was entered in error.

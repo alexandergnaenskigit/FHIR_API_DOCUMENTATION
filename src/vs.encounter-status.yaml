@@ -1,0 +1,2 @@
+system: http://hl7.org/fhir/encounter-status
+description: Current state of the encounter.

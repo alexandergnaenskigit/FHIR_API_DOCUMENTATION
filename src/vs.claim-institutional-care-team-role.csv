@@ -1,0 +1,7 @@
+code, system, display, definition
+primary, http://terminology.hl7.org/CodeSystem/claimcareteamrole, Primary provider, The primary care provider.
+attending, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Attending, The attending physician
+referring, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Referring, The referring physician
+operating, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Operating, The operating physician
+otheroperating, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Other Operating, The other operating physician
+performing, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimCareTeamRole, Performing provider, The performing or rendering provider

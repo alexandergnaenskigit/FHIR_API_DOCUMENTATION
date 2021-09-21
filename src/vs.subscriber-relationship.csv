@@ -1,0 +1,8 @@
+code, display, definition
+child, Child, The Beneficiary is a child of the Subscriber
+parent, Parent, The Beneficiary is a parent of the Subscriber
+spouse, Spouse, The Beneficiary is a spouse or equivalent of the Subscriber
+common, Common Law Spouse, The Beneficiary is a common law spouse or equivalent of the Subscriber
+other, Other, The Beneficiary has some other relationship the Subscriber
+self, Self, The Beneficiary is the Subscriber
+injured, Injured Party, The Beneficiary is covered under insurance of the subscriber due to an injury

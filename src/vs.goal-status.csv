@@ -1,0 +1,10 @@
+code, display, definition
+proposed, Proposed, A goal is proposed for this patient.
+planned, Planned, A goal is planned for this patient.
+accepted, Accepted, A proposed goal was accepted or acknowledged.
+active, Active, The goal is being sought actively.
+on-hold, On Hold, The goal remains a long term objective but is no longer being actively pursued for a temporary period of time., 
+completed, Completed, The goal is no longer being sought.
+cancelled, Cancelled, The goal has been abandoned.
+entered-in-error, Entered in Error, The goal was entered in error and voided.
+rejected, Rejected, A proposed goal was rejected.

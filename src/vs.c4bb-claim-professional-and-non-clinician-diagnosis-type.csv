@@ -1,0 +1,3 @@
+code, system, display, definition
+principal, http://terminology.hl7.org/CodeSystem/ex-diagnosistype, principal, The single medical diagnosis that is most relevant to the patient's chief complaint or need for treatment.
+secondary, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType, secondary, Required when necessary to report additional diagnoses on professional and non-clinician claims

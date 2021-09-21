@@ -1,0 +1,4 @@
+code, display, definition
+current, Current, The list is considered to be an active part of the patient's record.
+retired, Retired, The list is "old" and should no longer be considered accurate or relevant.
+entered-in-error, Entered In Error, The list was never accurate. It is retained for medico-legal purposes only.

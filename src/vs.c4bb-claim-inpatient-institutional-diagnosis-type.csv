@@ -1,0 +1,5 @@
+code, system, display, definition
+principal, http://terminology.hl7.org/CodeSystem/ex-diagnosistype, Principal Diagnosis, The single medical diagnosis that is most relevant to the patient's chief complaint or need for treatment.
+admitting, http://terminology.hl7.org/CodeSystem/ex-diagnosistype, Admitting Diagnosis, The diagnosis given as the reason why the patient was admitted to the hospital.
+other, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType, Other, Required when other conditions coexist or develop subsequently during the treatment
+externalcauseofinjury, http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBClaimDiagnosisType, External Cause of Injury, Required when an external cause of injury is needed to describe the injury

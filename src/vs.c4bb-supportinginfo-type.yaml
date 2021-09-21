@@ -1,0 +1,2 @@
+description: Used as the discriminator for the types of supporting information for the CARIN IG for Blue Button Implementation Guide.
+system: http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBSupportingInfoType

@@ -1,0 +1,2 @@
+system: https://www.nubc.org/CodeSystem/RevenueCodes
+description: The UB-04 Data File contains the complete set of NUBC codes. Every code in the range of possible codes is accounted for sequentially. There are no gaps because all used and unused codes are identified.
