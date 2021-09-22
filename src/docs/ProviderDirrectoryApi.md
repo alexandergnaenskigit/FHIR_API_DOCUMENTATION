@@ -9,13 +9,13 @@ The list below shows the main resources that were used by the FHIR Adapter.
 
 # Provider Directory
 
-- Organization
-- Practitioner
-- Location
-- Healthcare Service
-- Organization Affiliation
-- Practitioner Role
-- Insurance Plan
+- [Organization](https://hsfhirdocs.github.io/api_docs/profiles/Organization/DaVinci-PDEX-Plan-Net.html)
+- [Practitioner](https://hsfhirdocs.github.io/api_docs/profiles/Practitioner/DaVinci-PDEX-Plan-Net.html)
+- [Location](https://hsfhirdocs.github.io/api_docs/profiles/Location/DaVinci-PDEX-Plan-Net.html)
+- [Healthcare Service](https://hsfhirdocs.github.io/api_docs/profiles/HealthcareService/DaVinci-PDEX-Plan-Net.html)
+- [Organization Affiliation](https://hsfhirdocs.github.io/api_docs/profiles/OrganizationAffiliation/DaVinci-PDEX-Plan-Net.html)
+- [Practitioner Role](https://hsfhirdocs.github.io/api_docs/profiles/PractitionerRole/DaVinci-PDEX-Plan-Net.html)
+- [Insurance Plan](https://hsfhirdocs.github.io/api_docs/profiles/InsurancePlan/DaVinci-PDEX-Plan-Net.html)
 
 
 We store information about practitioners in these FHIR Entities:
@@ -34,15 +34,9 @@ Practitioner queries examples:
 - Get 100 practitioners (by default)<br/>
   [https://portal.aidbox.myparamount.org/fhir/Practitioner](https://portal.aidbox.myparamount.org/fhir/Practitioner)
 - Get practitioner by name<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Melanie%Garner](https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Melanie%Garner)
-- Get practitioners by language<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Practitioner?communication=es](https://portal.aidbox.myparamount.org/fhir/Practitioner?communication=es)
-- Get practitioners by specialty<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Practitioner?qualificationName=PHYSICAL%20THERAPY](https://portal.aidbox.myparamount.org/fhir/Practitioner?qualificationName=PHYSICAL%20THERAPY)
+  [https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Garner%20Melanie](https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Garner%20Melanie)
 - Get practitioner by identifier<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=1861919391](https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=1861919391)
-- Get practitioners by language AND specialty<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Practitioner?communication=es&qualificationName=PHYSICAL%20THERAPY](https://portal.aidbox.myparamount.org/fhir/Practitioner?communication=es&qualificationName=PHYSICAL%20THERAPY)
+  [https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=22240](https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=22240)
 
 
 ### PractitionerRole
@@ -61,8 +55,8 @@ PractitionerRole is a central entity for a practitioner. It means that this enti
   "resourceType": "Practitioner"
 }
 ```	
-3. Get practitioner by Fhir ID<br/>
-[https://portal.aidbox.myparamount.org/fhir/Practitioner?id=b061b7b9-79d6-4cf2-a758-41debb380760](https://portal.aidbox.myparamount.org/fhir/Practitioner?id=b061b7b9-79d6-4cf2-a758-41debb380760)
+3. Get PractitionerRole by Fhir ID<br/>
+[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?id=c020618b-68ad-412c-b104-7c3db0e302d6](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?id=c020618b-68ad-412c-b104-7c3db0e302d6)
 
 
 #### Advanced PractitionerRole Queries
@@ -75,9 +69,7 @@ To add additional entities in the response, like Practitioner or Location you sh
 [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner)	
 - Get PractitionerRole with Practitioner and Location entities<br/>
 [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location)			
-- Get PractitionerRole with all entities<br/>
-[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService)
-	
+
 	
 Also you can use these search parameters:	
 
@@ -89,13 +81,14 @@ Also you can use these search parameters:
 - practitionerSpecialtyCode - practitioner specialty code
 - practitionerTypeCode - practitioner type code
 
+<!-
 Advanced PractitionerRole queries examples:
 
 - Get by practitioner name<br/>
-[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO)
-- Get by network code and practitioner specialty<br/>[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY)
+[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:location&name=Garner%20Melanie](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:location&name=Garner%20Melanie)
+
 - Get by all search parameters<br/>
-[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP)
+[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:location,&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP)
 ___
 
 ### Organization
@@ -113,15 +106,15 @@ Organization queries examples:
 - Get 100 organizations (by default)<br/>
   [https://portal.aidbox.myparamount.org/fhir/Organization](https://portal.aidbox.myparamount.org/fhir/Organization)
 - Get organization by name<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Organization?name=NORTH%20CENTRAL%20BRONX%20HOSPITAL](https://portal.aidbox.myparamount.org/fhir/Organization?name=NORTH%20CENTRAL%20BRONX%20HOSPITAL)
-- Get organizations by address<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Organization?address=BRONX](https://portal.aidbox.myparamount.org/fhir/Organization?address=BRONX)
+  [https://portal.aidbox.myparamount.org/fhir/Organization?name=Partnership%20Health%20Center](https://portal.aidbox.myparamount.org/fhir/Organization?name=Partnership%20Health%20Center)
+- Get organizations by address zip code<br/>
+  [https://portal.aidbox.myparamount.org/fhir/Organization?address:postalCode=59801](https://portal.aidbox.myparamount.org/fhir/Organization?address:postalCode=59801)
 - Get organizations by type<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Organization?type=HS](https://portal.aidbox.myparamount.org/fhir/Organization?type=HS)	
+  [https://portal.aidbox.myparamount.org/fhir/Organization?type=prvgrp](https://portal.aidbox.myparamount.org/fhir/Organization?type=prvgrp)	
 - Get organization by identifier<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Organization?identifier=1023024882](https://portal.aidbox.myparamount.org/fhir/Organization?identifier=1023024882)
+  [https://portal.aidbox.myparamount.org/fhir/Organization?identifier=71673](https://portal.aidbox.myparamount.org/fhir/Organization?identifier=71673)
 - Get organizations by address AND type<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Organization?address=BRONX&type=HS](https://portal.aidbox.myparamount.org/fhir/Organization?address=BRONX&type=HS)
+  [https://portal.aidbox.myparamount.org/fhir/Organization?address=BRONX&type=prvgrp](https://portal.aidbox.myparamount.org/fhir/Organization?address=BRONX&type=prvgrp)
 
 
 ### OrganizationAffiliation
