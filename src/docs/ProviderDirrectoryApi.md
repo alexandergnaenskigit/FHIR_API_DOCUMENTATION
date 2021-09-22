@@ -34,7 +34,7 @@ Practitioner queries examples:
 - Get 100 practitioners (by default)<br/>
   [https://portal.aidbox.myparamount.org/fhir/Practitioner](https://portal.aidbox.myparamount.org/fhir/Practitioner)
 - Get practitioner by name<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Practitioner?name=GLASSER%20ANN](https://portal.aidbox.myparamount.org/fhir/Practitioner?name=GLASSER%20ANN)
+  [https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Melanie%Garner](https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Melanie%Garner)
 - Get practitioners by language<br/>
   [https://portal.aidbox.myparamount.org/fhir/Practitioner?communication=es](https://portal.aidbox.myparamount.org/fhir/Practitioner?communication=es)
 - Get practitioners by specialty<br/>
