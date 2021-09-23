@@ -142,11 +142,12 @@ Also OrganizationAffiliation entity is used to get all FHIR entities connected w
 
 To add additional entities in the response, like Organization or HealthcareService you should use _include parameter, e.g.:
 
-- Get OrganizationAffiliation and Organization entities<br/>
-  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization)		
-- Get OrganizationAffiliation with Organization and HealthcareService entities<br/>
-  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:service](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:service)
-- Get OrganizationAffiliation with all entities<br/>        [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service)
+- Get OrganizationAffiliation and Location entities<br/>
+  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location)		
+- Get OrganizationAffiliation with Location and HealthcareService entities<br/>
+  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location,OrganizationAffiliation:service](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location,OrganizationAffiliation:service)
+- Get OrganizationAffiliation with all entities<br/>        
+  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service)
 
 Also you can use these search parameters:	
 	
