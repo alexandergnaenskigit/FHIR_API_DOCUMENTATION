@@ -66,23 +66,24 @@ To add additional entities in the response, like Practitioner or Location you sh
 [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner)	
 - Get PractitionerRole with Practitioner and Location entities<br/>
 [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location)			
-
+- Get PractitionerRole with Practitioner and HealthcareService entities<br/>
+[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:service](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:service)			
 	
 Also you can use these search parameters:	
 
-- practitionerName - practitioner name
-- organizationName - organization name
-- practitionerNetwork - practitioner network code
-- practitionerSpecialty - full practitioner specialty name
-- practitionerType - full practitioner type name
-- practitionerSpecialtyCode - practitioner specialty code
-- practitionerTypeCode - practitioner type code
+- practitioner:name - practitioner name
+- organization:name - organization name
+- practitioner:network - practitioner network code
+- practitioner:specialty - full practitioner specialty name
+- practitioner:phone - practitioner phone
+- practitioner:specialty - practitioner specialty code
+- practitioner:location - practitioner location code
 
 <!-
 Advanced PractitionerRole queries examples:
 
 - Get by practitioner name<br/>
-[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:location&name=Garner%20Melanie](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:location&name=Garner%20Melanie)
+[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine)
 
 - Get by all search parameters<br/>
 [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:location,&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP)
