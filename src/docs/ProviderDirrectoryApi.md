@@ -2,10 +2,7 @@
 title: '2. Provider Dirrectory Api'
 ---
 
-
 This page contains short descriptions of Practitioner, PractitionerRole, Organization, and OrganizationAffiliation search queries, lists of search parameters, and sample queries.
-
-The list below shows the main resources that were used by the FHIR Adapter.
 
 # Provider Directory
 
@@ -44,7 +41,7 @@ Practitioner queries examples:
 PractitionerRole is a central entity for a practitioner. It means that this entity contains info about practitioner, network, location, organization and healthcareService. You can use PractitionerRole to search practitioners in the selected network:
 
 1. Get practitionerRoles by network<br/>
-   [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?practitionerNetwork=MAP](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?practitionerNetwork=MAP)	
+   [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?network=ff4f9bbc-8750-4fdd-bc80-a871d758f6e7](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?network=ff4f9bbc-8750-4fdd-bc80-a871d758f6e7)	
 2. Get Practitioner Fhir ID from the PractitionerRole entity
 ```json
 "practitioner": {
