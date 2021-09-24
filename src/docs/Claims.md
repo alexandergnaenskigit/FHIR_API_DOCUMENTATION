@@ -1,5 +1,5 @@
 ---
-title: 'Claims API'
+title: '4. Claims API'
 ---
 
 The list below shows the main resources that were used by the FHIR Adapter.

@@ -1,5 +1,5 @@
 ---
-title: 'Clinical Data API'
+title: '3. Clinical Data API'
 ---
 
 The list below shows the main resources that were used by the FHIR Adapter.

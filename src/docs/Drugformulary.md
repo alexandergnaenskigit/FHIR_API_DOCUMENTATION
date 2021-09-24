@@ -1,5 +1,5 @@
 ---
-title: 'Drug formulary API'
+title: '5. Drug formulary API'
 ---
 
 The list below shows the main resources that were used by the FHIR Adapter.

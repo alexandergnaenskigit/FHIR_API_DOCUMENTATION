@@ -1,5 +1,5 @@
 ---
-title: 'Provider Dirrectory Api'
+title: '2. Provider Dirrectory Api'
 ---
 
 
@@ -161,7 +161,12 @@ Also you can use these search parameters:
 
 Advanced OrganizationAffiliation queries examples:
 
-- Get by organization name<br/> [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC)
-- Get by network code and organization specialty<br/> 
-[https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE)
-- Get by all search parameters<br/>  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801)
+- Get by organization name
+<br/> 
+[https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC)
+- Get by network code and organization specialty
+<br/> 
+[https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&network=864e82d9-fba5-4923-ae8f-d18b24d573bd&specialty=193200000X](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE)
+- Get by all search parameters
+<br/>  
+[https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801)
