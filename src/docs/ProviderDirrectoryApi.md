@@ -85,8 +85,8 @@ Advanced PractitionerRole queries examples:
 - Get by practitioner name<br/>
 [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine)
 
-- Get by all search parameters<br/>
-[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:location,&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP)
+- Get by practitioner name and organization id<br/>
+[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine&organization:Organization.id=1a39a0ac-d3af-41c5-bc1e-3f69e1301814](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine&organization:Organization.id=1a39a0ac-d3af-41c5-bc1e-3f69e1301814)
 ___
 
 ### Organization
