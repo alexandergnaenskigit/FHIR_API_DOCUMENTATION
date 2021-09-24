@@ -120,7 +120,7 @@ Organization queries examples:
 OrganizationAffiliation is a central entity for an organization. It means that this entity contains info about organization, network, location, and healthcareService. You can use OrganizationAffiliation to search organization in the selected network:
 
 1. Get OrganizationAffiliation by network<br/>
-  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?organizationNetwork=MLTC](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?organizationNetwork=MLTC)	
+  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?network=864e82d9-fba5-4923-ae8f-d18b24d573bd](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?network=864e82d9-fba5-4923-ae8f-d18b24d573bd)	
 2. Get Organization Fhir ID from the OrganizationAffiliation entity
 ```json	
 "organization": {
@@ -132,7 +132,7 @@ OrganizationAffiliation is a central entity for an organization. It means that t
 }
 ```		
 3. Get Organization by Fhir ID<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Organization?id=22d99f7c-4dc6-46da-b5f8-1371f6ae8a53](https://portal.aidbox.myparamount.org/fhir/Organization?id=22d99f7c-4dc6-46da-b5f8-1371f6ae8a53)
+  [https://portal.aidbox.myparamount.org/fhir/Organization?id=1431faa2-c587-4788-affe-02775613e1bf](https://portal.aidbox.myparamount.org/fhir/Organization?id=1431faa2-c587-4788-affe-02775613e1bf)
 
 ##### Advanced OrganizationAffiliation Queries
 
