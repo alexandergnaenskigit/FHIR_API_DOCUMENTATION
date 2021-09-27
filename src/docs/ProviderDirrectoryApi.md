@@ -149,8 +149,8 @@ To add additional entities in the response, like Organization or HealthcareServi
 
 Also you can use these search parameters:	
 	
-- organizationName - organization name
-- organizationNetwork - organization network code
+- organization: name - organization name
+- organization: network - organization network code
 - organizationType - full organization type name
 - organizationSpecialty - full organization specialty name
 - organizationSpecialtyCode - organization specialty code
