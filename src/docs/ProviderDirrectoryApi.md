@@ -120,11 +120,11 @@ Organization queries examples:
 OrganizationAffiliation is a central entity for an organization. It means that this entity contains info about organization, network, location, and healthcareService. You can use OrganizationAffiliation to search organization in the selected network:
 
 1. Get OrganizationAffiliation by network<br/>
-  [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?network=864e82d9-fba5-4923-ae8f-d18b24d573bd](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?network=864e82d9-fba5-4923-ae8f-d18b24d573bd)	
+  [https://portal.aidbox.myparamount.org/OrganizationAffiliation?network=75ca8a25-2914-42c3-9022-af3236e6b2cb](https://portal.aidbox.myparamount.org/OrganizationAffiliation?network=75ca8a25-2914-42c3-9022-af3236e6b2cb)	
 2. Get Organization Fhir ID from the OrganizationAffiliation entity
 ```json	
 "organization": {
-     "id": "22d99f7c-4dc6-46da-b5f8-1371f6ae8a53",
+     "id": "e05865d3-cbde-4bab-92f6-a41d263efb79",
      "resource": {
 		...
      },
@@ -132,7 +132,7 @@ OrganizationAffiliation is a central entity for an organization. It means that t
 }
 ```		
 3. Get Organization by Fhir ID<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Organization?id=1431faa2-c587-4788-affe-02775613e1bf](https://portal.aidbox.myparamount.org/fhir/Organization?id=1431faa2-c587-4788-affe-02775613e1bf)
+  [https://portal.aidbox.myparamount.org/fhir/Organization/e05865d3-cbde-4bab-92f6-a41d263efb79](https://portal.aidbox.myparamount.org/fhir/Organization/e05865d3-cbde-4bab-92f6-a41d263efb79)
 
 ##### Advanced OrganizationAffiliation Queries
 
@@ -151,20 +151,13 @@ Also you can use these search parameters:
 	
 - organization: name - organization name
 - organization: network - organization network code
-- organizationType - full organization type name
-- organizationSpecialty - full organization specialty name
-- organizationSpecialtyCode - organization specialty code
-- organizationTypeCode - organization type code
+- organization: telecom - organization phone
+- organization: specialty - full organization specialty name
+- organization: email - organization email
 
 
 Advanced OrganizationAffiliation queries examples:
 
-- Get by organization name
-<br/> 
-[https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC)
 - Get by network code and organization specialty
 <br/> 
 [https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&network=864e82d9-fba5-4923-ae8f-d18b24d573bd&specialty=193200000X](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE)
-- Get by all search parameters
-<br/>  
-[https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801)
