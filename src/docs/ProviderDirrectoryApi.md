@@ -40,12 +40,12 @@ Practitioner queries examples:
 
 PractitionerRole is a central entity for a practitioner. It means that this entity contains info about practitioner, network, location, organization and healthcareService. You can use PractitionerRole to search practitioners in the selected network:
 
-1. Get practitionerRoles by network<br/>
-   [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?network=ff4f9bbc-8750-4fdd-bc80-a871d758f6e7](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?network=ff4f9bbc-8750-4fdd-bc80-a871d758f6e7)	
+1. Get practitionerRoles by organization<br/>
+   [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?organization=98fd97ef-0863-4b89-a951-3f52cc639543](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?organization=98fd97ef-0863-4b89-a951-3f52cc639543)	
 2. Get Practitioner Fhir ID from the PractitionerRole entity
 ```json
 "practitioner": {
-  "id": "920c870c-2553-4ff0-b255-b2c58504dbce",
+  "id": "694b0dc1-b8fd-41b6-99a9-62681b28fa49",
   "resource": {
     ...
   },
@@ -53,7 +53,7 @@ PractitionerRole is a central entity for a practitioner. It means that this enti
 }
 ```	
 3. Get PractitionerRole by Fhir ID<br/>
-[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?id=c020618b-68ad-412c-b104-7c3db0e302d6](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?id=c020618b-68ad-412c-b104-7c3db0e302d6)
+[https://portal.aidbox.myparamount.org/fhir/PractitionerRole?practitioner=694b0dc1-b8fd-41b6-99a9-62681b28fa49](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?practitioner=694b0dc1-b8fd-41b6-99a9-62681b28fa49)
 
 
 #### Advanced PractitionerRole Queries
@@ -160,4 +160,4 @@ Advanced OrganizationAffiliation queries examples:
 
 - Get by network code and organization specialty
 <br/> 
-[https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&network=864e82d9-fba5-4923-ae8f-d18b24d573bd&specialty=193200000X](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE)
+[https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&network=75ca8a25-2914-42c3-9022-af3236e6b2cb&specialty=193200000X](https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&network=75ca8a25-2914-42c3-9022-af3236e6b2cb&specialty=193200000X)
