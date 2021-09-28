@@ -62,6 +62,81 @@ Where
 
 [resource name] - is the name of a resource you want to read.
 
+To read a particular record use the following request:
+
+GET [base url]/[resource name]/[id]
+
+Where
+
+[base url] - the base url (see above)
+
+[resource name] - is the name of a resource you want to read
+
+[id] - is a FHIR identifier
+
+For example, to get data for a particular Practitioner you can run:
+
+GET [base url]/Practitioner/4ec99942-c667-4d54-af23-f89f0792e4ed
+
+You can get, for example, the following result:
+```json
+{
+    "meta": {
+        "lastUpdated": "2021-06-11T19:38:39.686496Z",
+        "createdAt": "2021-06-11T19:38:39.686496Z",
+        "versionId": "11293018"
+    },
+    "name": [
+        {
+            "use": "official",
+            "given": [
+                "Sample",
+                "A"
+            ],
+            "family": "Practitioner"
+        }
+    ],
+    "birthDate": "1984-12-08"
+    "resourceType": "Practitioner",
+    "active": true,
+    "id": "4ec99942-c667-4d54-af23-f89f0792e4ed",
+    "identifier": [
+        {
+            "use": "secondary",
+            "type": {
+                "coding": [
+                    {
+                        "code": "externalId",
+                        "display": "externalId",
+                        "userSelected": false
+                    }
+                ]
+            },
+            "value": "89687",
+            "system": "http://hl7.org/fhir/sid/external-id"
+        },
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "code": "NPI",
+                        "display": "NPI",
+                        "userSelected": false
+                    }
+                ]
+            },
+            "value": "1111111111",
+            "system": "http://hl7.org/fhir/sid/us-npi"
+        }
+    ],
+    "gender": "male"
+}
+```
+
+More samples and additional information can be found here:
+
+[https://docs.aidbox.app/api-1/api/crud-1/read](https://docs.aidbox.app/api-1/api/crud-1/read)
 
 
 ## Standard Search Parameters
