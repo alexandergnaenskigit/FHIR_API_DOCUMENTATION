@@ -1,19 +1,20 @@
 ---
-title: '2. Provider Dirrectory Api'
+title: '2. Provider Dirrectory API'
 ---
 
 This page contains short descriptions of Practitioner, PractitionerRole, Organization, and OrganizationAffiliation search queries, lists of search parameters, and sample queries.
 
 # Provider Directory
 
-- [Organization](https://hsfhirdocs.github.io/api_docs/profiles/Organization/DaVinci-PDEX-Plan-Net.html)
-- [Practitioner](https://hsfhirdocs.github.io/api_docs/profiles/Practitioner/DaVinci-PDEX-Plan-Net.html)
-- [Location](https://hsfhirdocs.github.io/api_docs/profiles/Location/DaVinci-PDEX-Plan-Net.html)
-- [Healthcare Service](https://hsfhirdocs.github.io/api_docs/profiles/HealthcareService/DaVinci-PDEX-Plan-Net.html)
-- [Organization Affiliation](https://hsfhirdocs.github.io/api_docs/profiles/OrganizationAffiliation/DaVinci-PDEX-Plan-Net.html)
-- [Practitioner Role](https://hsfhirdocs.github.io/api_docs/profiles/PractitionerRole/DaVinci-PDEX-Plan-Net.html)
-- [Insurance Plan](https://hsfhirdocs.github.io/api_docs/profiles/InsurancePlan/DaVinci-PDEX-Plan-Net.html)
+- [Organization](../../profiles/Organization/DaVinci-PDEX-Plan-Net.html)
+- [Practitioner](../../profiles/Practitioner/DaVinci-PDEX-Plan-Net.html)
+- [Location](../../profiles/Location/DaVinci-PDEX-Plan-Net.html)
+- [Healthcare Service](../../profiles/HealthcareService/DaVinci-PDEX-Plan-Net.html)
+- [Organization Affiliation](../../profiles/OrganizationAffiliation/DaVinci-PDEX-Plan-Net.html)
+- [Practitioner Role](../../profiles/PractitionerRole/DaVinci-PDEX-Plan-Net.html)
+- [Insurance Plan](../../profiles/InsurancePlan/DaVinci-PDEX-Plan-Net.html)
 
+## Practitioner
 
 We store information about practitioners in these FHIR Entities:
 
@@ -24,7 +25,7 @@ We store information about practitioners in these FHIR Entities:
 - Location - practitioner's location info (address) and telecom info (phone, email) 
 - HealthcareService - services provided by a practitioner
 
-## Sample Queries
+### Sample Queries
 
 Practitioner queries examples:
 
@@ -32,13 +33,13 @@ Practitioner queries examples:
   [https://portal.aidbox.myparamount.org/fhir/Practitioner](https://portal.aidbox.myparamount.org/fhir/Practitioner)
 - Get practitioner by name<br/>
   [https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Garner%20Melanie](https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Garner%20Melanie)
-- Get practitioner by identifier<br/>
-  [https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=22240](https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=22240)
+- Get practitioner by NPI<br/>
+  [https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=1033572763](https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=1033572763)
 
 
 ### PractitionerRole
 
-PractitionerRole is a central entity for a practitioner. It means that this entity contains info about practitioner, network, location, organization and healthcareService. You can use PractitionerRole to search practitioners in the selected network:
+PractitionerRole is a central entity which connects info about practitioner, network, location, organization and healthcareService. You can use PractitionerRole to search practitioners in the selected network:
 
 1. Get practitionerRoles by organization<br/>
    [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?organization=98fd97ef-0863-4b89-a951-3f52cc639543](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?organization=98fd97ef-0863-4b89-a951-3f52cc639543)	
@@ -117,7 +118,7 @@ Organization queries examples:
 
 ### OrganizationAffiliation
 
-OrganizationAffiliation is a central entity for an organization. It means that this entity contains info about organization, network, location, and healthcareService. You can use OrganizationAffiliation to search organization in the selected network:
+OrganizationAffiliation is a central entity which connects info about organization, network, location, and healthcareService. You can use OrganizationAffiliation to search organization in the selected network:
 
 1. Get OrganizationAffiliation by network<br/>
   [https://portal.aidbox.myparamount.org/OrganizationAffiliation?network=75ca8a25-2914-42c3-9022-af3236e6b2cb](https://portal.aidbox.myparamount.org/OrganizationAffiliation?network=75ca8a25-2914-42c3-9022-af3236e6b2cb)	

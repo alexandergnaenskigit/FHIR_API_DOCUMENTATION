@@ -38,8 +38,6 @@ It does not provide detailed specification of the FHIR API or full details of it
 ## Basic Requests
 Aidbox follows the FHIR standard. All API calls should be done using the following base url:
 
-[http://hl7.org/fhir/](http://hl7.org/fhir/)
-
 For provider access, that is public - [https://portal.aidbox.myparamount.org/fhir](https://portal.aidbox.myparamount.org/fhir)
 
 For patient access, that is restricted and requires permissions - [https://portal.aidbox.myparamount.org/smart](https://portal.aidbox.myparamount.org/smart)
@@ -121,8 +119,7 @@ Tutorial for additional help:
 
 Implementation Guides for CMS Interoperability Rule
 The FHIR standard provides a set of resources and its attributes, but in most
-
-cases it does not impose strict restrictions on the required attributes and their values. In turn, implementation guides impose additional, more stringent restrictions. The following 4 IGs are used to comply with CMS Rule (https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index):
+cases it does not impose strict restrictions on the required attributes and their values. In turn, implementation guides impose additional, more stringent restrictions. The following 4 IGs are used to comply with CMS Rule [https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index](https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index):
 
 Provider Directory API
 
@@ -140,6 +137,4 @@ Claims and Encounter Data
 
 [http://hl7.org/fhir/us/carin-bb/index.html](http://hl7.org/fhir/us/carin-bb/index.html)
 
-Provider and pharmacy directories are publicly available information and do not require any additional security measures. Members’ claims and clinical data are considered Protected Health Information (PHI) and need to be secured. Members authorize applications they want to use to access their PHI. The process of app registration and authorization by members is standardized in the SMART on FHIR specification.
-
-SMART App Launch Framework (hl7.org)
+Provider and pharmacy directories are publicly available information and do not require any additional security measures. Members’ claims and clinical data are considered Protected Health Information (PHI) and need to be secured. Members authorize applications they want to use to access their PHI. The process of app registration and authorization by members is standardized in the SMART on FHIR specification. Please see [SMART App Launch Framework (hl7.org)](http://hl7.org/fhir/smart-app-launch/)
