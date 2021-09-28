@@ -1,29 +1,23 @@
 ---
-title: '2. Provider Dirrectory API'
+title: '2. Provider Directory API'
 ---
 
-This page contains short descriptions of Practitioner, PractitionerRole, Organization, and OrganizationAffiliation search queries, lists of search parameters, and sample queries.
+# Provider Directory API
 
-# Provider Directory
+Provider Directory API follows [DaVinci PDEX Plan Net Implementation Guide](http://hl7.org/fhir/us/davinci-pdex-plan-net/index.html)  
 
-- [Organization](../../profiles/Organization/DaVinci-PDEX-Plan-Net.html)
-- [Practitioner](../../profiles/Practitioner/DaVinci-PDEX-Plan-Net.html)
-- [Location](../../profiles/Location/DaVinci-PDEX-Plan-Net.html)
-- [Healthcare Service](../../profiles/HealthcareService/DaVinci-PDEX-Plan-Net.html)
-- [Organization Affiliation](../../profiles/OrganizationAffiliation/DaVinci-PDEX-Plan-Net.html)
-- [Practitioner Role](../../profiles/PractitionerRole/DaVinci-PDEX-Plan-Net.html)
-- [Insurance Plan](../../profiles/InsurancePlan/DaVinci-PDEX-Plan-Net.html)
+This implementation guide defines a FHIR interface to a health insurer’s insurance plans, their associated networks, and the organizations and providers that participate in these networks. Publication of this data through a standard FHIR-based API will enable third parties to develop applications through which consumers and providers can query the participants in a payer’s network that may provide services that address their health care needs. Although there are multiple types and sources of providers’ directories, including provider organizations (i.e., a hospital listing all its physicians), government (i.e., listing of providers in Medicare), payers (i.e., a health plan’s provider network), and third-party entities (such as vendors that maintain provider directories), the focus of this implementation guide is on Payer Provider Directories.
+
 
 ## Practitioner
 
-We store information about practitioners in these FHIR Entities:
+The information about practitioners is stored in these FHIR Entities:
 
-- Practitioner - basic info about а practitioner. Contains demographics, specialty, language and identifiers like NPI and IRS
-- PractitionerRole - central entity to connect practitioner's entities. Also contains info about available time
-- Organization - practitioner's place of work
-- Network - info about health plans a practitioner is connected with
-- Location - practitioner's location info (address) and telecom info (phone, email) 
-- HealthcareService - services provided by a practitioner
+- [Practitioner](../../profiles/Practitioner/DaVinci-PDEX-Plan-Net.html) - basic info about а practitioner. Contains demographics, specialty, language and identifiers like NPI and IRS
+- [PractitionerRole](../../profiles/PractitionerRole/DaVinci-PDEX-Plan-Net.html) - central entity to connect practitioner's entities. Also contains info about available time
+- [Organization](../../profiles/Organization/DaVinci-PDEX-Plan-Net.html) - practitioner's place of work
+- [Location](../../profiles/Location/DaVinci-PDEX-Plan-Net.html) - practitioner's location info (address) and telecom info (phone, email) 
+- [HealthcareService](../../profiles/HealthcareService/DaVinci-PDEX-Plan-Net.html) - services provided by a practitioner
 
 ### Sample Queries
 
@@ -90,15 +84,14 @@ Advanced PractitionerRole queries examples:
 [https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine&organization:Organization.id=1a39a0ac-d3af-41c5-bc1e-3f69e1301814](https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine&organization:Organization.id=1a39a0ac-d3af-41c5-bc1e-3f69e1301814)
 ___
 
-### Organization
+## Organization
 
 We store information about organization in these FHIR Entities:
 
-Organization - basic info about an organization. Contains name, address, type, specialty, identifiers like NPI and telecom info like phone and email.
-OrganizationAffiliation - central entity to connect organization's entities.
-Network - health plans an organization is connected with
-Location - organization's location (address) and telecom (phone, email) info 
-HealthcareService - services provided in an organization
+- [Organization](../../profiles/Organization/DaVinci-PDEX-Plan-Net.html) - basic info about an organization. Contains name, address, type, specialty, identifiers like NPI and telecom info like phone and email.
+- [OrganizationAffiliation](../../profiles/OrganizationAffiliation/DaVinci-PDEX-Plan-Net.html) - central entity to connect organization's entities.
+- [Location](../../profiles/Location/DaVinci-PDEX-Plan-Net.html) - organization's location (address) and telecom (phone, email) info 
+- [HealthcareService](../../profiles/HealthcareService/DaVinci-PDEX-Plan-Net.html) - services provided in an organization
 
 Organization queries examples:
 
