@@ -23,7 +23,7 @@ elements:
   type:
     minItems: 1
     type: CodeableConcept
-    valueset: { id: 'insurance-product-type' }
+    valueset: null
     description: Product Type.
   name:
     type: string

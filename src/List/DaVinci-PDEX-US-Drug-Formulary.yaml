@@ -19,11 +19,11 @@ elements:
     type: code
     required: true
     description: The processing mode that applies to this list.
-    valueset: { id: 'list-mode' }
+    valueset: null
     constant: working
   status:
     type: code
     required: true
     description: The current state of the list.
-    valueset: { id: 'list-status' }
+    valueset: null
     constant: current

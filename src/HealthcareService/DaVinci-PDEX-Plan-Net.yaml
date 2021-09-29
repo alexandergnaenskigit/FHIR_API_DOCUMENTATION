@@ -36,22 +36,22 @@ elements:
   category:
     minItems: 1
     type: CodeableConcept
-    valueset: { id: 'healthcare-service-category' }
+    valueset: null
     description: Broad category of service being performed or delivered.
   type:
     collection: true
     type: CodeableConcept
-    valueset: { id: 'service-type' }
+    valueset: null
     description: Type of service that may be delivered or performed.
   characteristic:
     collection: true
     type: CodeableConcept
-    valueset: { id: 'healthcare-service-characteristic' }
+    valueset: null
     description: Collection of characteristics (attributes).
   program:
     collection: true
     type: CodeableConcept
-    valueset: { id: 'healthcare-service-program' }
+    valueset: null
     description: Programs that this service is applicable to.
   availableTime:
     collection: true

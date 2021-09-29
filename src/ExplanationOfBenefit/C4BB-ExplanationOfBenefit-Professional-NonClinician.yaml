@@ -54,7 +54,7 @@ elements:
     required: true
     type: code
     description: The result of the claim processing.
-    valueset: { id: 'remittance-outcome' }
+    valueset: null
   careTeam:
     collection: true
     type: BackboneElement
@@ -89,8 +89,8 @@ elements:
       diagnosisSequence: {type: positiveInt, description: Applicable diagnoses.} 
       extension: {collection: true, type: Extension, description: Additional content defined by implementations.} 
       serviced: {union: [date, Period], description: Date or dates of service or product delivery.} 
-      category: {type: CodeableConcept, description: Benefit classification. , valueset: { id: 'ex-benefitcategory-toscode' }}
-      productOrService: {required: true, type: CodeableConcept, description: Billing, service, product, or drug code. , valueset: { id: 'procedure-codes' }} 
+      category: {type: CodeableConcept, description: Benefit classification. , valueset: null}
+      productOrService: {required: true, type: CodeableConcept, description: Billing, service, product, or drug code. , valueset: null} 
       adjudication: {collection: true, type: BackboneElement, description: Adjudication details., elements: {category: {required: true, type: CodeableConcept, description: Type of adjudication information, valueset: { id: 'c4bb-adjudication-category-discriminator' }}, amount: {type: Money, description: Monetary amount}} }    
   total:
     minItems: 1

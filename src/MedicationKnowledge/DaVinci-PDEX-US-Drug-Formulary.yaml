@@ -27,13 +27,13 @@ elements:
     type: Narrative
     description: Text summary of the resource, for human interpretation.
     elements:
-      status: {type: code, required: true, valueset: { id: 'narrative-status' }, description: The status of the narrative  }
+      status: {type: code, required: true, valueset: null, description: The status of the narrative  }
       div: {type: code, required: true, description: Limited xhtml content } 
   code:
     type: CodeableConcept
     required: true
     description: Codes that identify this medication. 
-    valueset: { id: 'us-core-medication-codes' }
+    valueset: null
   doseForm: 
     type: CodeableConcept
     description: A coded concept defining the form of a medication.

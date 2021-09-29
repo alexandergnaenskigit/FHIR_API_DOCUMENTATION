@@ -64,7 +64,7 @@ elements:
     required: true
     type: code
     description: The result of the claim processing.
-    valueset: { id: 'remittance-outcome' }
+    valueset: null
   careTeam:
     collection: true
     type: BackboneElement
@@ -88,7 +88,7 @@ elements:
     elements:
       sequence: {required: true, type: positiveInt, description: Item instance identifier.} 
       serviced: {union: [date, Period], description: Date or dates of service or product delivery.} 
-      productOrService: {required: true, type: CodeableConcept, description: Billing, service, product, or drug code., valueset: { id: 'ndc-or-compound' } } 
+      productOrService: {required: true, type: CodeableConcept, description: Billing, service, product, or drug code., valueset: null } 
       adjudication: {collection: true, type: BackboneElement, description: Adjudication details., elements: {category: {required: true, type: CodeableConcept, description: Type of adjudication information, valueset: { id: 'c4bb-adjudication-category-discriminator' }}, amount: {type: Money, description: Monetary amount}} }    
   total:
     minItems: 2

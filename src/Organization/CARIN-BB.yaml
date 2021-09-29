@@ -24,7 +24,6 @@ elements:
   active: 
     required: true
     type: boolean
-    constant: 'false'
     description: Whether the organization's record is still in active use.
   type: 
     collection: true

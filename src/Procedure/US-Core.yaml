@@ -23,16 +23,16 @@ elements:
     type: code    
     description: US Core Procedure Status
     constant: completed
-    valueset: { id: 'event-status' }
+    valueset: null
   category:
     type: CodeableConcept   
     description: Classification of the procedure  
-    valueset: { id: 'ex-benefitcategory-toscode' }
+    valueset: null
   code:
     required: true
     type: CodeableConcept    
     description: Identification of the procedure 
-    valueset: { id: 'us-core-procedure-code' }
+    valueset: null
   performed:
     required: true
     union: [dateTime, Period, string, Age, Range]   

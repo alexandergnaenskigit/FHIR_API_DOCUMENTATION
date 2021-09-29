@@ -45,7 +45,7 @@ elements:
     type: BackboneElement
     description: Certification, licenses, or training pertaining to the provision of care
     elements:
-      code: {type: CodeableConcept, required: true,  valueset: { id: 'individual-specialty-and-degree-license-certificate' }, description: Coded representation of the qualification. }
+      code: {type: CodeableConcept, required: true,  valueset: null, description: Coded representation of the qualification. }
       issuer:  {type: Reference, description: Organization that regulates and issues the qualification. }
   communication:
     collection: true
