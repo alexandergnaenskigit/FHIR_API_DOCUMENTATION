@@ -1,0 +1,258 @@
+<html><head><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-158366190-1"></script><script>window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+                              gtag('js', new Date());
+
+                              gtag('config', 'UA-158366190-1');
+                              gtag('config', 'UA-158366190-2');</script><meta charset="utf-8" /><link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet" /><link href="/api_docs/static/fire-solid.png" rel="icon" /><link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Montserrat|Roboto&amp;display=swap" rel="stylesheet" /><style>body .table {
+  display: table;
+  border-collapse: collapse;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+body .row {
+  display: table-row;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+body .column {
+  display: table-cell;
+  padding: 8px;
+}
+
+body .first-line {
+  border-bottom: 2px solid #E6ECF1;
+  color: #5b6975;
+}
+
+body a {
+  color: rgb(217, 86, 64);
+}
+
+body .body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "header header header" 
+"nav content ads";
+  padding: 0;
+  flex-direction: column;
+  grid-gap: 0px;
+  display: grid;
+  grid-template-columns: minmax(0, 20%) minmax(0, 1fr) minmax(0, 15%);
+}
+
+body .body #welcome {
+  color: inherit;
+}
+
+body .body #header {
+  grid-area: header;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow:  0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  z-index: 100;
+  border-bottom: 1px solid #d4dadf;
+  padding: 10px 0;
+}
+
+body .body #header h5 {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  padding: 5px 0px;
+  border-right: 1px solid #ddd;
+}
+
+body .body #header h5 .fa {
+  color: #e94a35;
+  text-shadow: -1px -1px 1px #000000c7;
+}
+
+body .body #header #top-nav {
+  text-align: center;
+  padding-left: 80px;
+  display: inline-block;
+}
+
+body .body #header #top-nav a {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d95640;
+  padding: 5px;
+}
+
+body .body #main-menu {
+  grid-area: nav;
+  padding-top: 32px;
+  padding-left: 68px;
+  border-right: 1px solid #E6ECF1;
+  background-color: #f5f7f9;
+  overflow-y: auto;
+  padding-bottom: 100px;
+  font-weight: 800;
+}
+
+body .body #main-menu a {
+  line-height: 1.5;
+  border: 1px solid transparent;
+  word-break: break-word;
+  padding: 7px 24px 7px 16px;
+  cursor: pointer;
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 14px;
+  box-sizing: content-box;
+  display: block;
+  background: none;
+  color: #5C6975;
+}
+
+body .body #main-menu a:hover {
+  background-color: #E6ECF1;
+}
+
+body .body #main-menu a.active {
+  background-color: white;
+  border-left: 1px solid #E6ECF1;
+  border-top: 1px solid #E6ECF1;
+  border-bottom: 1px solid #E6ECF1;
+  border-right: 1px solid white;
+  margin-right: -1px;
+  z-index: 10;
+  color: #d95640;
+}
+
+body .body #main-menu section {
+  border-left: 1px solid #ddd;
+  margin-left: 18px;
+}
+
+body .body #main-menu section a {
+  color: gray;
+  font-weight: 400;
+}
+
+body .body #content {
+  background-color: white;
+  padding: 40px 88px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #content h1 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content h2, body .body #content h3 {
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content hr {
+  border-top: 2px solid #E6ECF1;
+}
+
+body .body #content a.refbtn {
+  margin: 0 5px;
+  color: #888888;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.42857143;
+}
+
+body .body #content span.sub {
+  float: right;
+  font-size: 16px;
+  color: #888;
+  display: inline-block;
+}
+
+body .body #db-content {
+  background-color: white;
+  padding: 40px 0px;
+  margin: 0 -40px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #db-content .db-item {
+  width: 350px;
+  margin-right: 1em;
+  border: 1px solid #E6ECF1;
+  vertical-align: top;
+  padding: 16px 24px;
+  min-height: 108px;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  display: inline-block;
+  color: #242A31;
+}
+
+body .body #db-content .db-item:hover {
+  text-decoration: none;
+  border-color: rgb(56, 132, 254);
+  opacity: 1;
+  color: #3884FE;
+}
+
+body .body #db-content .db-item h5 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+body .body #db-content .db-item .desc {
+  color: #9DAAB6;
+  font-size: 14px;
+}
+
+body .summary {
+  color: #74818D;
+}</style><title>Paramount FHIR API</title></head><body><div class="body"><div id="header"><a href="/api_docs/" id="welcome"><h5><span class="fa fa-fire"></span> Paramount FHIR API</h5></a><div id="top-nav"><a href="/api_docs/docs/ParamountInteroperabilityAPIs/basic.html">Docs</a><a href="/api_docs/profiles/CarePlan/US-Core.html">Profiles</a><a href="/api_docs/valuesets/address-type.html">ValueSets</a></div></div><style>.content, thead {
+  color: #5b6975;
+  border-bottom: 2px solid #E6ECF1;
+}
+
+.content, thead, tr, th {
+  padding: 8px;
+}
+
+.content, tbody, tr {
+  border-bottom: 2px solid #E6ECF1;
+}
+
+.content, tbody, td {
+  padding: 8px;
+}
+
+.content, table {
+  margin: 20px 0px;
+}</style><div id="main-menu"><div><a href="/api_docs/docs/ParamountInteroperabilityAPIs/basic.html">1. Overview</a></div><div><a class="active" href="/api_docs/docs/ProviderDirrectoryApi/basic.html">2. Provider Directory API</a></div><div><a href="/api_docs/docs/ClinicalData/basic.html">3. Clinical Data API</a></div><div><a href="/api_docs/docs/Claims/basic.html">4. Claims and Encounter Data API</a></div><div><a href="/api_docs/docs/Drugformulary/basic.html">5. Drug formulary API</a></div></div><div id="content"><pre></pre><h1>Provider Directory API</h1><p>Provider Directory API follows <a href='http://hl7.org/fhir/us/davinci-pdex-plan-net/index.html'>DaVinci PDEX Plan Net Implementation Guide</a><br /></p><p>This implementation guide defines a FHIR interface to a health insurer’s insurance plans, their associated networks, and the organizations and providers that participate in these networks. Publication of this data through a standard FHIR-based API will enable third parties to develop applications through which consumers and providers can query the participants in a payer’s network that may provide services that address their health care needs. Although there are multiple types and sources of providers’ directories, including provider organizations (i.e., a hospital listing all its physicians), government (i.e., listing of providers in Medicare), payers (i.e., a health plan’s provider network), and third-party entities (such as vendors that maintain provider directories), the focus of this implementation guide is on Payer Provider Directories.</p><h2>Practitioner</h2><p>The information about practitioners is stored in these FHIR Entities:</p><ul><li><a href='../../profiles/Practitioner/DaVinci-PDEX-Plan-Net.html'>Practitioner</a> - basic info about а practitioner. Contains demographics, specialty, language and identifiers like NPI and IRS</li><li><a href='../../profiles/PractitionerRole/DaVinci-PDEX-Plan-Net.html'>PractitionerRole</a> - central entity to connect practitioner's entities. Also contains info about available time</li><li><a href='../../profiles/Organization/DaVinci-PDEX-Plan-Net.html'>Organization</a> - practitioner's place of work</li><li><a href='../../profiles/Location/DaVinci-PDEX-Plan-Net.html'>Location</a> - practitioner's location info (address) and telecom info (phone, email)</li><li><a href='../../profiles/HealthcareService/DaVinci-PDEX-Plan-Net.html'>HealthcareService</a> - services provided by a practitioner</li></ul><h3>Sample Queries</h3><p>Practitioner queries examples:</p><ul><li>Get 100 practitioners (by default)<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Practitioner'>https://portal.aidbox.myparamount.org/fhir/Practitioner</a></li><li>Get practitioner by name<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Garner%20Melanie'>https://portal.aidbox.myparamount.org/fhir/Practitioner?name=Garner%20Melanie</a></li><li>Get practitioner by NPI<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=1033572763'>https://portal.aidbox.myparamount.org/fhir/Practitioner?identifier=1033572763</a></li></ul><h3>PractitionerRole</h3><p>PractitionerRole is a central entity which connects info about practitioner, network, location, organization and healthcareService. You can use PractitionerRole to search practitioners in the selected network:</p><ol><li>Get practitionerRoles by organization<br/>   <a href='https://portal.aidbox.myparamount.org/fhir/PractitionerRole?organization=98fd97ef-0863-4b89-a951-3f52cc639543'>https://portal.aidbox.myparamount.org/fhir/PractitionerRole?organization=98fd97ef-0863-4b89-a951-3f52cc639543</a>	</li><li>Get Practitioner Fhir ID from the PractitionerRole entity<pre><code class="json">&quot;practitioner&quot;: {
+  &quot;id&quot;: &quot;694b0dc1-b8fd-41b6-99a9-62681b28fa49&quot;,
+  &quot;resource&quot;: {
+    ...
+  },
+  &quot;resourceType&quot;: &quot;Practitioner&quot;
+}
+</code></pre></li><li>Get PractitionerRole by Fhir ID<br/><a href='https://portal.aidbox.myparamount.org/fhir/PractitionerRole?practitioner=694b0dc1-b8fd-41b6-99a9-62681b28fa49'>https://portal.aidbox.myparamount.org/fhir/PractitionerRole?practitioner=694b0dc1-b8fd-41b6-99a9-62681b28fa49</a></li></ol><h4>Advanced PractitionerRole Queries</h4><p>Also PractitionerRole entity is used to get all FHIR entities connected with a practitioner in one query. These queries can use multiple search parameters and you can include, exclude and combine them. Also you can control what entities will be returned by including and excluding entities from the _include parameter of these queries.</p><p>To add additional entities in the response, like Practitioner or Location you should use _include parameter, e.g.:</p><ul><li>Get PractitionerRole and Practitioner entities<br/><a href='https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner'>https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner</a>	</li><li>Get PractitionerRole with Practitioner and Location entities<br/><a href='https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location'>https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location</a>			</li><li>Get PractitionerRole with Practitioner and HealthcareService entities<br/><a href='https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:service'>https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:service</a>				</li></ul><p>Also you can use these search parameters:	</p><ul><li>practitioner:name - practitioner name</li><li>organization:name - organization name</li><li>practitioner:network - practitioner network code</li><li>practitioner:specialty - full practitioner specialty name</li><li>practitioner:phone - practitioner phone</li><li>practitioner:specialty - practitioner specialty code</li><li>practitioner:location - practitioner location code</li></ul><p><!- Advanced PractitionerRole queries examples:</p><ul><li>Get by practitioner name<br/><a href='https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine'>https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine</a></li><li>Get by practitioner name and organization id<br/><a href='https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine&organization:Organization.id=1a39a0ac-d3af-41c5-bc1e-3f69e1301814'>https://portal.aidbox.myparamount.org/fhir/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner&practitioner:Practitioner.name=Yost%20Catherine&organization:Organization.id=1a39a0ac-d3af-41c5-bc1e-3f69e1301814</a><hr/></li></ul><h2>Organization</h2><p>We store information about organization in these FHIR Entities:</p><ul><li><a href='../../profiles/Organization/DaVinci-PDEX-Plan-Net.html'>Organization</a> - basic info about an organization. Contains name, address, type, specialty, identifiers like NPI and telecom info like phone and email.</li><li><a href='../../profiles/OrganizationAffiliation/DaVinci-PDEX-Plan-Net.html'>OrganizationAffiliation</a> - central entity to connect organization's entities.</li><li><a href='../../profiles/Location/DaVinci-PDEX-Plan-Net.html'>Location</a> - organization's location (address) and telecom (phone, email) info</li><li><a href='../../profiles/HealthcareService/DaVinci-PDEX-Plan-Net.html'>HealthcareService</a> - services provided in an organization</li></ul><p>Organization queries examples:</p><ul><li>Get 100 organizations (by default)<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Organization'>https://portal.aidbox.myparamount.org/fhir/Organization</a></li><li>Get organization by name<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Organization?name=Partnership%20Health%20Center'>https://portal.aidbox.myparamount.org/fhir/Organization?name=Partnership%20Health%20Center</a></li><li>Get organizations by address zip code<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Organization?address:postalCode=59801'>https://portal.aidbox.myparamount.org/fhir/Organization?address:postalCode=59801</a></li><li>Get organizations by type<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Organization?type=prvgrp'>https://portal.aidbox.myparamount.org/fhir/Organization?type=prvgrp</a>	</li><li>Get organization by identifier<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Organization?identifier=71673'>https://portal.aidbox.myparamount.org/fhir/Organization?identifier=71673</a></li><li>Get organizations by address AND type<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Organization?address=BRONX&type=prvgrp'>https://portal.aidbox.myparamount.org/fhir/Organization?address=BRONX&type=prvgrp</a></li></ul><h3>OrganizationAffiliation</h3><p>OrganizationAffiliation is a central entity which connects info about organization, network, location, and healthcareService. You can use OrganizationAffiliation to search organization in the selected network:</p><ol><li>Get OrganizationAffiliation by network<br/>  <a href='https://portal.aidbox.myparamount.org/OrganizationAffiliation?network=75ca8a25-2914-42c3-9022-af3236e6b2cb'>https://portal.aidbox.myparamount.org/OrganizationAffiliation?network=75ca8a25-2914-42c3-9022-af3236e6b2cb</a>	</li><li>Get Organization Fhir ID from the OrganizationAffiliation entity<pre><code class="json">&quot;organization&quot;: {
+     &quot;id&quot;: &quot;e05865d3-cbde-4bab-92f6-a41d263efb79&quot;,
+     &quot;resource&quot;: {
+		...
+     },
+     &quot;resourceType&quot;: &quot;Organization&quot;
+}
+</code></pre></li><li>Get Organization by Fhir ID<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/Organization/e05865d3-cbde-4bab-92f6-a41d263efb79'>https://portal.aidbox.myparamount.org/fhir/Organization/e05865d3-cbde-4bab-92f6-a41d263efb79</a></li></ol><h5>Advanced OrganizationAffiliation Queries</h5><p>Also OrganizationAffiliation entity is used to get all FHIR entities connected with an organization in one query. These queries can use multiple search parameters and you can include, exclude and combine them. Also you can control what entities will be returned by including and excluding entities from the _include parameter of these queries.</p><p>To add additional entities in the response, like Organization or HealthcareService you should use _include parameter, e.g.:</p><ul><li>Get OrganizationAffiliation and Location entities<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location'>https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location</a>		</li><li>Get OrganizationAffiliation with Location and HealthcareService entities<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location,OrganizationAffiliation:service'>https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location,OrganizationAffiliation:service</a></li><li>Get OrganizationAffiliation with all entities<br/>  <a href='https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service'>https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:location,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service</a></li></ul><p>Also you can use these search parameters:	 	</p><ul><li>organization: name - organization name</li><li>organization: network - organization network code</li><li>organization: telecom - organization phone</li><li>organization: specialty - full organization specialty name</li><li>organization: email - organization email</li></ul><p>Advanced OrganizationAffiliation queries examples:</p><ul><li>Get by network code and organization specialty<br/> <a href='https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&network=75ca8a25-2914-42c3-9022-af3236e6b2cb&specialty=193200000X'>https://portal.aidbox.myparamount.org/fhir/OrganizationAffiliation?_include=OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&network=75ca8a25-2914-42c3-9022-af3236e6b2cb&specialty=193200000X</a></li></ul></div></div><script src="/api_docs/static/jquery-3.4.1.min.js"></script><script src="/api_docs/static/collapse-structure.js"></script><script src="/api_docs/static/lmenu-view.js"></script><script src="/api_docs/static/tabs.js"></script></body></html>

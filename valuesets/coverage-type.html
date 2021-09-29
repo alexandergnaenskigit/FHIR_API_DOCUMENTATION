@@ -1,0 +1,225 @@
+<html><head><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-158366190-1"></script><script>window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+                              gtag('js', new Date());
+
+                              gtag('config', 'UA-158366190-1');
+                              gtag('config', 'UA-158366190-2');</script><meta charset="utf-8" /><link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet" /><link href="/api_docs/static/fire-solid.png" rel="icon" /><link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Montserrat|Roboto&amp;display=swap" rel="stylesheet" /><style>body .table {
+  display: table;
+  border-collapse: collapse;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+body .row {
+  display: table-row;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+body .column {
+  display: table-cell;
+  padding: 8px;
+}
+
+body .first-line {
+  border-bottom: 2px solid #E6ECF1;
+  color: #5b6975;
+}
+
+body a {
+  color: rgb(217, 86, 64);
+}
+
+body .body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "header header header" 
+"nav content ads";
+  padding: 0;
+  flex-direction: column;
+  grid-gap: 0px;
+  display: grid;
+  grid-template-columns: minmax(0, 20%) minmax(0, 1fr) minmax(0, 15%);
+}
+
+body .body #welcome {
+  color: inherit;
+}
+
+body .body #header {
+  grid-area: header;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow:  0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  z-index: 100;
+  border-bottom: 1px solid #d4dadf;
+  padding: 10px 0;
+}
+
+body .body #header h5 {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  padding: 5px 0px;
+  border-right: 1px solid #ddd;
+}
+
+body .body #header h5 .fa {
+  color: #e94a35;
+  text-shadow: -1px -1px 1px #000000c7;
+}
+
+body .body #header #top-nav {
+  text-align: center;
+  padding-left: 80px;
+  display: inline-block;
+}
+
+body .body #header #top-nav a {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d95640;
+  padding: 5px;
+}
+
+body .body #main-menu {
+  grid-area: nav;
+  padding-top: 32px;
+  padding-left: 68px;
+  border-right: 1px solid #E6ECF1;
+  background-color: #f5f7f9;
+  overflow-y: auto;
+  padding-bottom: 100px;
+  font-weight: 800;
+}
+
+body .body #main-menu a {
+  line-height: 1.5;
+  border: 1px solid transparent;
+  word-break: break-word;
+  padding: 7px 24px 7px 16px;
+  cursor: pointer;
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 14px;
+  box-sizing: content-box;
+  display: block;
+  background: none;
+  color: #5C6975;
+}
+
+body .body #main-menu a:hover {
+  background-color: #E6ECF1;
+}
+
+body .body #main-menu a.active {
+  background-color: white;
+  border-left: 1px solid #E6ECF1;
+  border-top: 1px solid #E6ECF1;
+  border-bottom: 1px solid #E6ECF1;
+  border-right: 1px solid white;
+  margin-right: -1px;
+  z-index: 10;
+  color: #d95640;
+}
+
+body .body #main-menu section {
+  border-left: 1px solid #ddd;
+  margin-left: 18px;
+}
+
+body .body #main-menu section a {
+  color: gray;
+  font-weight: 400;
+}
+
+body .body #content {
+  background-color: white;
+  padding: 40px 88px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #content h1 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content h2, body .body #content h3 {
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content hr {
+  border-top: 2px solid #E6ECF1;
+}
+
+body .body #content a.refbtn {
+  margin: 0 5px;
+  color: #888888;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.42857143;
+}
+
+body .body #content span.sub {
+  float: right;
+  font-size: 16px;
+  color: #888;
+  display: inline-block;
+}
+
+body .body #db-content {
+  background-color: white;
+  padding: 40px 0px;
+  margin: 0 -40px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #db-content .db-item {
+  width: 350px;
+  margin-right: 1em;
+  border: 1px solid #E6ECF1;
+  vertical-align: top;
+  padding: 16px 24px;
+  min-height: 108px;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  display: inline-block;
+  color: #242A31;
+}
+
+body .body #db-content .db-item:hover {
+  text-decoration: none;
+  border-color: rgb(56, 132, 254);
+  opacity: 1;
+  color: #3884FE;
+}
+
+body .body #db-content .db-item h5 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+body .body #db-content .db-item .desc {
+  color: #9DAAB6;
+  font-size: 14px;
+}
+
+body .summary {
+  color: #74818D;
+}</style><title>Paramount FHIR API</title></head><body><div class="body"><div id="header"><a href="/api_docs/" id="welcome"><h5><span class="fa fa-fire"></span> Paramount FHIR API</h5></a><div id="top-nav"><a href="/api_docs/docs/ParamountInteroperabilityAPIs/basic.html">Docs</a><a href="/api_docs/profiles/CarePlan/US-Core.html">Profiles</a><a href="/api_docs/valuesets/address-type.html">ValueSets</a></div></div><div id="main-menu"><div><a href="/api_docs/valuesets/address-type.html">address-type</a></div><div><a href="/api_docs/valuesets/administrative-gender.html">administrative-gender</a></div><div><a href="/api_docs/valuesets/board-verify-certification.html">board-verify-certification</a></div><div><a href="/api_docs/valuesets/c4bb-adjudication-category-discriminator.html">c4bb-adjudication-category-discriminator</a></div><div><a href="/api_docs/valuesets/c4bb-claim-inpatient-institutional-diagnosis-type.html">c4bb-claim-inpatient-institutional-diagnosis-type</a></div><div><a href="/api_docs/valuesets/c4bb-claim-outpatient-institutional-diagnosis-type.html">c4bb-claim-outpatient-institutional-diagnosis-type</a></div><div><a href="/api_docs/valuesets/c4bb-claim-professional-and-non-clinician-diagnosis-type.html">c4bb-claim-professional-and-non-clinician-diagnosis-type</a></div><div><a href="/api_docs/valuesets/c4bb-supportinginfo-type.html">c4bb-supportinginfo-type</a></div><div><a href="/api_docs/valuesets/c4bb-total-category-discriminator.html">c4bb-total-category-discriminator</a></div><div><a href="/api_docs/valuesets/care-plan-category.html">care-plan-category</a></div><div><a href="/api_docs/valuesets/claim-institutional-care-team-role.html">claim-institutional-care-team-role</a></div><div><a href="/api_docs/valuesets/claim-pharmacy-careteam-role.html">claim-pharmacy-careteam-role</a></div><div><a href="/api_docs/valuesets/claim-professional-and-non-clinician-care-team-role.html">claim-professional-and-non-clinician-care-team-role</a></div><div><a href="/api_docs/valuesets/claim-type.html">claim-type</a></div><div><a href="/api_docs/valuesets/claim-use.html">claim-use</a></div><div><a href="/api_docs/valuesets/contact-point-system.html">contact-point-system</a></div><div><a href="/api_docs/valuesets/coverage-class.html">coverage-class</a></div><div><a class="active" href="/api_docs/valuesets/coverage-type.html">coverage-type</a></div><div><a href="/api_docs/valuesets/days-of-week.html">days-of-week</a></div><div><a href="/api_docs/valuesets/delivery-method.html">delivery-method</a></div><div><a href="/api_docs/valuesets/diagnosis-codes.html">diagnosis-codes</a></div><div><a href="/api_docs/valuesets/explanationofbenefit-status.html">explanationofbenefit-status</a></div><div><a href="/api_docs/valuesets/fm-status.html">fm-status</a></div><div><a href="/api_docs/valuesets/goal-status.html">goal-status</a></div><div><a href="/api_docs/valuesets/identifier-type.html">identifier-type</a></div><div><a href="/api_docs/valuesets/languages.html">languages</a></div><div><a href="/api_docs/valuesets/location-status.html">location-status</a></div><div><a href="/api_docs/valuesets/medication-status.html">medication-status</a></div><div><a href="/api_docs/valuesets/provider-type.html">provider-type</a></div><div><a href="/api_docs/valuesets/publication-status.html">publication-status</a></div></div><div id="content"><h1>Valueset coverage-type</h1><div class="summary">This value set includes Coverage Type codes.</div><hr /><br /><div class="table"><div class="row th first-line"><div class="column"><div class="th">Code</div></div><div class="column"><div class="th">System</div></div><div class="column"><div class="th">Display</div></div><div class="column"><div class="th">Definition</div></div></div><div class="row"><div class="column">pay</div><div class="column">http://terminology.hl7.org/CodeSystem/coverage-selfpay</div><div class="column">Pay</div><div class="column">An individual or organization is paying directly for goods and services.</div></div><div class="row"><div class="column">EHCPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">extended healthcare</div><div class="column">Private insurance policy that provides coverage in addition to other policies (e.g. in addition to a Public Healthcare insurance policy).</div></div><div class="row"><div class="column">HSAPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">health spending account</div><div class="column">Insurance policy that provides for an allotment of funds replenished on a periodic (e.g. annual) basis. The use of the funds under this policy is at the discretion of the covered party.</div></div><div class="row"><div class="column">AUTOPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">automobile</div><div class="column">Insurance policy for injuries sustained in an automobile accident. Will also typically covered non-named parties to the policy</div></div><div class="row"><div class="column">COL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">collision coverage policy</div><div class="column">Definition: An automobile insurance policy under which the insurance company will cover the cost of damages to an automobile owned by the named insured that are caused by accident or intentionally by another party.</div></div><div class="row"><div class="column">UNINSMOT</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">uninsured motorist policy</div><div class="column">Definition: An automobile insurance policy under which the insurance company will indemnify a loss for which another motorist is liable if that motorist is unable to pay because he or she is uninsured. Coverage under the policy applies to bodily injury damages only. Injuries to the covered party caused by a hit-and-run driver are also covered.</div></div><div class="row"><div class="column">PUBLICPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">public healthcare</div><div class="column">Insurance policy funded by a public health system such as a provincial or national health plan. Examples include BC MSP (British Columbia Medical Services Plan) OHIP (Ontario Health Insurance Plan)</div></div><div class="row"><div class="column">DENTPRG</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">dental program</div><div class="column">Definition: A public or government health program that administers and funds coverage for dental care to assist program eligible who meet financial and health status criteria.</div></div><div class="row"><div class="column">DISEASEPRG</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">public health program</div><div class="column">Definition: A public or government health program that administers and funds coverage for health and social services to assist program eligible who meet financial and health status criteria related to a particular disease. Example: Reproductive health</div></div><div class="row"><div class="column">CANPRG</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">women's cancer detection program</div><div class="column">Definition: A program that provides low-income</div></div><div class="row"><div class="column">ENDRENAL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">end renal program</div><div class="column">Definition: A public or government program that administers publicly funded coverage of kidney dialysis and kidney transplant services. Example: In the U.S.</div></div><div class="row"><div class="column">HIVAIDS</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">HIV-AIDS program</div><div class="column">Definition: Government administered and funded HIV-AIDS program for beneficiaries meeting financial and health status criteria. Administration</div></div><div class="row"><div class="column">MANDPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">mandatory health program</div><div class="column">mandatory health program</div></div><div class="row"><div class="column">MENTPRG</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">mental health program</div><div class="column">Definition: Government administered and funded mental health program for beneficiaries meeting financial and mental health status criteria. Administration</div></div><div class="row"><div class="column">SAFNET</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">safety net clinic program</div><div class="column">Definition: Government administered and funded program to support provision of care to underserved populations through safety net clinics. Example: In the U.S.</div></div><div class="row"><div class="column">SUBPRG</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">substance use program</div><div class="column">Definition: Government administered and funded substance use program for beneficiaries meeting financial</div></div><div class="row"><div class="column">SUBSIDIZ</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">subsidized health program</div><div class="column">Definition: A government health program that provides coverage for health services to persons meeting eligibility criteria such as income</div></div><div class="row"><div class="column">SUBSIDMC</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">subsidized managed care program</div><div class="column">Definition: A government health program that provides coverage through managed care contracts for health services to persons meeting eligibility criteria such as income</div></div><div class="row"><div class="column">SUBSUPP</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">subsidized supplemental health program</div><div class="column">Definition: A government health program that provides coverage for health services to persons meeting eligibility criteria for a supplemental health policy or program such as income</div></div><div class="row"><div class="column">WCBPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">worker's compensation</div><div class="column">Insurance policy for injuries sustained in the work place or in the course of employment.</div></div><div class="row"><div class="column">DENTAL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">dental care policy</div><div class="column">Definition: A health insurance policy that that covers benefits for dental services.</div></div><div class="row"><div class="column">DISEASE</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">disease specific policy</div><div class="column">Definition: A health insurance policy that covers benefits for healthcare services provided for named conditions under the policy</div></div><div class="row"><div class="column">DRUGPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">drug policy</div><div class="column">Definition: A health insurance policy that covers benefits for prescription drugs</div></div><div class="row"><div class="column">HIP</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">health insurance plan policy</div><div class="column">Definition: A health insurance policy that covers healthcare benefits by protecting covered parties from medical expenses arising from health conditions</div></div><div class="row"><div class="column">LTC</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">long term care policy</div><div class="column">Definition: An insurance policy that covers benefits for long-term care services people need when they no longer can care for themselves. This may be due to an accident</div></div><div class="row"><div class="column">MCPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">managed care policy</div><div class="column">Definition: Government mandated program providing coverage</div></div><div class="row"><div class="column">POS</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">point of service policy</div><div class="column">Definition: A policy for a health plan that has features of both an HMO and a FFS plan. Like an HMO</div></div><div class="row"><div class="column">HMO</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">health maintenance organization policy</div><div class="column">Definition: A policy for a health plan that provides coverage for health care only through contracted or employed physicians and hospitals located in particular geographic or service areas. HMOs emphasize prevention and early detection of illness. Eligibility to enroll in an HMO is determined by where a covered party lives or works.</div></div><div class="row"><div class="column">PPO</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">preferred provider organization policy</div><div class="column">Definition: A network-based</div></div><div class="row"><div class="column">MENTPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">mental health policy</div><div class="column">Definition: A health insurance policy that covers benefits for mental health services and prescriptions.</div></div><div class="row"><div class="column">SUBPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">substance use policy</div><div class="column">Definition: A health insurance policy that covers benefits for substance use services.</div></div><div class="row"><div class="column">VISPOL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">vision care policy</div><div class="column">Definition: Set of codes for a policy that provides coverage for health care expenses arising from vision services. A health insurance policy that covers benefits for vision care services</div></div><div class="row"><div class="column">DIS</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">disability insurance policy</div><div class="column">Definition: An insurance policy that provides a regular payment to compensate for income lost due to the covered party's inability to work because of illness or injury.</div></div><div class="row"><div class="column">EWB</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">employee welfare benefit plan policy</div><div class="column">Definition: An insurance policy under a benefit plan run by an employer or employee organization for the purpose of providing benefits other than pension-related to employees and their families. Typically provides health-related benefits</div></div><div class="row"><div class="column">FLEXP</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">flexible benefit plan policy</div><div class="column">Definition: An insurance policy that covers qualified benefits under a Flexible Benefit plan such as group medical insurance</div></div><div class="row"><div class="column">LIFE</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">life insurance policy</div><div class="column">Definition: A policy under which the insurer agrees to pay a sum of money upon the occurrence of the covered partys death. In return</div></div><div class="row"><div class="column">ANNU</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">annuity policy</div><div class="column">Definition: A policy that</div></div><div class="row"><div class="column">TLIFE</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">term life insurance policy</div><div class="column">Definition: Life insurance under which the benefit is payable only if the insured dies during a specified period. If an insured dies during that period</div></div><div class="row"><div class="column">ULIFE</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">universal life insurance policy</div><div class="column">Definition: Life insurance under which the benefit is payable upon the insuredaTMs death or diagnosis of a terminal illness. If an insured dies during that period</div></div><div class="row"><div class="column">PNC</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">property and casualty insurance policy</div><div class="column">Definition: A type of insurance that covers damage to or loss of the policyholderaTMs property by providing payments for damages to property damage or the injury or death of living subjects. The terms "casualty" and "liability" insurance are often used interchangeably. Both cover the policyholder's legal liability for damages caused to other persons and/or their property.</div></div><div class="row"><div class="column">REI</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">reinsurance policy</div><div class="column">Definition: An agreement between two or more insurance companies by which the risk of loss is proportioned. Thus the risk of loss is spread and a disproportionately large loss under a single policy does not fall on one insurance company. Acceptance by an insurer</div></div><div class="row"><div class="column">SURPL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">surplus line insurance policy</div><div class="column">Definition: A risk or part of a risk for which there is no normal insurance market available. Insurance written by unauthorized insurance companies. Surplus lines insurance is insurance placed with unauthorized insurance companies through licensed surplus lines agents or brokers.</div></div><div class="row"><div class="column">UMBRL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">umbrella liability insurance policy</div><div class="column">Definition: A form of insurance protection that provides additional liability coverage after the limits of your underlying policy are reached. An umbrella liability policy also protects you (the insured) in many situations not covered by the usual liability policies.</div></div><div class="row"><div class="column">CHAR</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">charity program</div><div class="column">Definition: A program that covers the cost of services provided directly to a beneficiary who typically has no other source of coverage without charge.</div></div><div class="row"><div class="column">CRIME</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">crime victim program</div><div class="column">Definition: A program that covers the cost of services provided to crime victims for injuries or losses related to the occurrence of a crime.</div></div><div class="row"><div class="column">EAP</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">employee assistance program</div><div class="column">Definition: An employee assistance program is run by an employer or employee organization for the purpose of providing benefits and covering all or part of the cost for employees to receive counseling</div></div><div class="row"><div class="column">GOVEMP</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">government employee health program</div><div class="column">Definition: A set of codes used to indicate a government program that is an organized structure for administering and funding coverage of a benefit package for covered parties meeting eligibility criteria</div></div><div class="row"><div class="column">HIRISK</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">high risk pool program</div><div class="column">Definition: A government program that provides health coverage to individuals who are considered medically uninsurable or high risk</div></div><div class="row"><div class="column">IND</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">indigenous peoples health program</div><div class="column">Definition: Services provided directly and through contracted and operated indigenous peoples health programs. Example: Indian Health Service in the U.S.</div></div><div class="row"><div class="column">MILITARY</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">military health program</div><div class="column">Definition: A government program that provides coverage for health services to military personnel</div></div><div class="row"><div class="column">RETIRE</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">retiree health program</div><div class="column">Definition: A government mandated program with specific eligibility requirements based on premium contributions made during employment</div></div><div class="row"><div class="column">SOCIAL</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">social service program</div><div class="column">Definition: A social service program funded by a public or governmental entity. Example: Programs providing habilitation</div></div><div class="row"><div class="column">VET</div><div class="column">http://terminology.hl7.org/CodeSystem/v3-ActCode</div><div class="column">veteran health program</div><div class="column">Definition: Services provided directly and through contracted and operated veteran health programs.</div></div></div></div></div><script src="/api_docs/static/jquery-3.4.1.min.js"></script><script src="/api_docs/static/collapse-structure.js"></script><script src="/api_docs/static/lmenu-view.js"></script><script src="/api_docs/static/tabs.js"></script></body></html>

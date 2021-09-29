@@ -1,0 +1,296 @@
+<html><head><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-158366190-1"></script><script>window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+                              gtag('js', new Date());
+
+                              gtag('config', 'UA-158366190-1');
+                              gtag('config', 'UA-158366190-2');</script><meta charset="utf-8" /><link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet" /><link href="/api_docs/static/fire-solid.png" rel="icon" /><link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Montserrat|Roboto&amp;display=swap" rel="stylesheet" /><style>body .table {
+  display: table;
+  border-collapse: collapse;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+body .row {
+  display: table-row;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+body .column {
+  display: table-cell;
+  padding: 8px;
+}
+
+body .first-line {
+  border-bottom: 2px solid #E6ECF1;
+  color: #5b6975;
+}
+
+body a {
+  color: rgb(217, 86, 64);
+}
+
+body .body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "header header header" 
+"nav content ads";
+  padding: 0;
+  flex-direction: column;
+  grid-gap: 0px;
+  display: grid;
+  grid-template-columns: minmax(0, 20%) minmax(0, 1fr) minmax(0, 15%);
+}
+
+body .body #welcome {
+  color: inherit;
+}
+
+body .body #header {
+  grid-area: header;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow:  0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  z-index: 100;
+  border-bottom: 1px solid #d4dadf;
+  padding: 10px 0;
+}
+
+body .body #header h5 {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  padding: 5px 0px;
+  border-right: 1px solid #ddd;
+}
+
+body .body #header h5 .fa {
+  color: #e94a35;
+  text-shadow: -1px -1px 1px #000000c7;
+}
+
+body .body #header #top-nav {
+  text-align: center;
+  padding-left: 80px;
+  display: inline-block;
+}
+
+body .body #header #top-nav a {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d95640;
+  padding: 5px;
+}
+
+body .body #main-menu {
+  grid-area: nav;
+  padding-top: 32px;
+  padding-left: 68px;
+  border-right: 1px solid #E6ECF1;
+  background-color: #f5f7f9;
+  overflow-y: auto;
+  padding-bottom: 100px;
+  font-weight: 800;
+}
+
+body .body #main-menu a {
+  line-height: 1.5;
+  border: 1px solid transparent;
+  word-break: break-word;
+  padding: 7px 24px 7px 16px;
+  cursor: pointer;
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 14px;
+  box-sizing: content-box;
+  display: block;
+  background: none;
+  color: #5C6975;
+}
+
+body .body #main-menu a:hover {
+  background-color: #E6ECF1;
+}
+
+body .body #main-menu a.active {
+  background-color: white;
+  border-left: 1px solid #E6ECF1;
+  border-top: 1px solid #E6ECF1;
+  border-bottom: 1px solid #E6ECF1;
+  border-right: 1px solid white;
+  margin-right: -1px;
+  z-index: 10;
+  color: #d95640;
+}
+
+body .body #main-menu section {
+  border-left: 1px solid #ddd;
+  margin-left: 18px;
+}
+
+body .body #main-menu section a {
+  color: gray;
+  font-weight: 400;
+}
+
+body .body #content {
+  background-color: white;
+  padding: 40px 88px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #content h1 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content h2, body .body #content h3 {
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content hr {
+  border-top: 2px solid #E6ECF1;
+}
+
+body .body #content a.refbtn {
+  margin: 0 5px;
+  color: #888888;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.42857143;
+}
+
+body .body #content span.sub {
+  float: right;
+  font-size: 16px;
+  color: #888;
+  display: inline-block;
+}
+
+body .body #db-content {
+  background-color: white;
+  padding: 40px 0px;
+  margin: 0 -40px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #db-content .db-item {
+  width: 350px;
+  margin-right: 1em;
+  border: 1px solid #E6ECF1;
+  vertical-align: top;
+  padding: 16px 24px;
+  min-height: 108px;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  display: inline-block;
+  color: #242A31;
+}
+
+body .body #db-content .db-item:hover {
+  text-decoration: none;
+  border-color: rgb(56, 132, 254);
+  opacity: 1;
+  color: #3884FE;
+}
+
+body .body #db-content .db-item h5 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+body .body #db-content .db-item .desc {
+  color: #9DAAB6;
+  font-size: 14px;
+}
+
+body .summary {
+  color: #74818D;
+}</style><title>Paramount FHIR API</title></head><body><div class="body"><div id="header"><a href="/api_docs/" id="welcome"><h5><span class="fa fa-fire"></span> Paramount FHIR API</h5></a><div id="top-nav"><a href="/api_docs/docs/ParamountInteroperabilityAPIs/basic.html">Docs</a><a href="/api_docs/profiles/CarePlan/US-Core.html">Profiles</a><a href="/api_docs/valuesets/address-type.html">ValueSets</a></div></div><style>.content, thead {
+  color: #5b6975;
+  border-bottom: 2px solid #E6ECF1;
+}
+
+.content, thead, tr, th {
+  padding: 8px;
+}
+
+.content, tbody, tr {
+  border-bottom: 2px solid #E6ECF1;
+}
+
+.content, tbody, td {
+  padding: 8px;
+}
+
+.content, table {
+  margin: 20px 0px;
+}</style><div id="main-menu"><div><a class="active" href="/api_docs/docs/ParamountInteroperabilityAPIs/basic.html">1. Overview</a></div><div><a href="/api_docs/docs/ProviderDirrectoryApi/basic.html">2. Provider Directory API</a></div><div><a href="/api_docs/docs/ClinicalData/basic.html">3. Clinical Data API</a></div><div><a href="/api_docs/docs/Claims/basic.html">4. Claims and Encounter Data API</a></div><div><a href="/api_docs/docs/Drugformulary/basic.html">5. Drug formulary API</a></div></div><div id="content"><pre></pre><h1>Paramount Interoperability APIs</h1><p>Overview Paramount interoperability APIs enable Paramount members to consent to have their health data shared with third-party applications. It also allows third-party application owners to connect to provider and pharmacy directories, further referred to as “public non-member specific data.”</p><h2>Paramount Interoperability APIs provide the following functionality:</h2><p>Enable developers to register member-facing applications. Enable members to provide consent for an application to access their data. Use the HL7 Fast Healthcare Interoperability Resources (FHIR) standard for member data. Use the HL7 FHIR standard for sharing public non-member specific data. Third Party Applications Developer-friendly, standards-based APIs that enable third party applications for vendors to connect their applications or programs to access Paramount data.</p><p>To use the Paramount interoperability API, a developer must register their application. An organization must register as a user and complete the registration application before submitting their application for consideration.</p><h2>API Permissions and Scopes</h2><p>Access tokens have scopes, which define permissions and the resources that the token can access. Scopes are primarily utilized to determine the type of data an application is requesting. Scopes must be explicitly declared; wildcards are not supported.</p><p>In the current release the following scopes are available for the following types of requests:</p><ul><li>Public access - Provider Directory</li><li>Permissioned based - Patient access</li></ul><p>Note: Any Scope not currently listed is not supported.</p><p>This gives access to the correct FHIR Endpoints.</p><h2>API Documentation</h2><p>This document serves the purpose of a quick start and provides useful links to the corresponding standards and specifications.</p><p>It does not provide detailed specification of the FHIR API or full details of its implementation in Aidbox.</p><h2>Basic Requests</h2><p>Aidbox follows the FHIR standard. All API calls should be done using the following base url:</p><p>For provider access, that is public - <a href='https://portal.aidbox.myparamount.org/fhir'>https://portal.aidbox.myparamount.org/fhir</a></p><p>For patient access, that is restricted and requires permissions - <a href='https://portal.aidbox.myparamount.org/smart'>https://portal.aidbox.myparamount.org/smart</a></p><p>Below are examples of basic requests, a full description of which can be found in the RESTful API section of the specification.</p><p>Find additional information about Aidbox and its implementation of the standard:</p><p><a href='http://hl7.org/fhir/http.html'>http://hl7.org/fhir/http.html</a></p><p><a href='https://docs.aidbox.app/'>https://docs.aidbox.app/</a></p><h3>Read</h3><p>To read data you should use GET HTTP request with the following basic structure:</p><p>GET [base url]/[resource name]</p><p>Where</p><p>[base url] - the base url (see above)</p><p>[resource name] - is the name of a resource you want to read.</p><p>To read a particular record use the following request:</p><p>GET [base url]/[resource name]/[id]</p><p>Where</p><p>[base url] - the base url (see above)</p><p>[resource name] - is the name of a resource you want to read</p><p>[id] - is a FHIR identifier</p><p>For example, to get data for a particular Practitioner you can run:</p><p>GET [base url]/Practitioner/4ec99942-c667-4d54-af23-f89f0792e4ed</p><p>You can get, for example, the following result:<pre><code class="json">{
+    &quot;meta&quot;: {
+        &quot;lastUpdated&quot;: &quot;2021-06-11T19:38:39.686496Z&quot;,
+        &quot;createdAt&quot;: &quot;2021-06-11T19:38:39.686496Z&quot;,
+        &quot;versionId&quot;: &quot;11293018&quot;
+    },
+    &quot;name&quot;: &#91;
+        {
+            &quot;use&quot;: &quot;official&quot;,
+            &quot;given&quot;: &#91;
+                &quot;Sample&quot;,
+                &quot;A&quot;
+            &#93;,
+            &quot;family&quot;: &quot;Practitioner&quot;
+        }
+    &#93;,
+    &quot;birthDate&quot;: &quot;1984-12-08&quot;
+    &quot;resourceType&quot;: &quot;Practitioner&quot;,
+    &quot;active&quot;: true,
+    &quot;id&quot;: &quot;4ec99942-c667-4d54-af23-f89f0792e4ed&quot;,
+    &quot;identifier&quot;: &#91;
+        {
+            &quot;use&quot;: &quot;secondary&quot;,
+            &quot;type&quot;: {
+                &quot;coding&quot;: &#91;
+                    {
+                        &quot;code&quot;: &quot;externalId&quot;,
+                        &quot;display&quot;: &quot;externalId&quot;,
+                        &quot;userSelected&quot;: false
+                    }
+                &#93;
+            },
+            &quot;value&quot;: &quot;89687&quot;,
+            &quot;system&quot;: &quot;http://hl7.org/fhir/sid/external-id&quot;
+        },
+        {
+            &quot;use&quot;: &quot;official&quot;,
+            &quot;type&quot;: {
+                &quot;coding&quot;: &#91;
+                    {
+                        &quot;code&quot;: &quot;NPI&quot;,
+                        &quot;display&quot;: &quot;NPI&quot;,
+                        &quot;userSelected&quot;: false
+                    }
+                &#93;
+            },
+            &quot;value&quot;: &quot;1111111111&quot;,
+            &quot;system&quot;: &quot;http://hl7.org/fhir/sid/us-npi&quot;
+        }
+    &#93;,
+    &quot;gender&quot;: &quot;male&quot;
+}
+</code></pre></p><p>More samples and additional information can be found here:</p><p><a href='https://docs.aidbox.app/api-1/api/crud-1/read'>https://docs.aidbox.app/api-1/api/crud-1/read</a></p><h2>Standard Search Parameters</h2><p>Search parameters can be one of the search parameters defined for a particular resource in the standard. For example, for the practitioner resource the list of search parameters can be found here:</p><p><a href='http://hl7.org/fhir/practitioner.html#search'>http://hl7.org/fhir/practitioner.html#search</a></p><p>Or, for the organization resource here:</p><p><a href='https://hl7.org/fhir/organization.html#search'>https://hl7.org/fhir/organization.html#search</a></p><p>For example, to find the practitioner by name you can use the following request:</p><p>GET [base url]/Practitioner?name=John</p><p>Or to find the practitioner by it’s identifier (for example NPI) use the following request:</p><p>GET [base url]/Practitioner?identifier=1111111111</p><h2>Special Search Parameters</h2><p>Search parameters can be one of the following special search parameters:</p><table><thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>_id</td><td>FHIR</td><td>Search and sort by resource id</td></tr><tr><td>_lastUpdated</td><td>FHIR</td><td>Search and sort by resource last modification date</td></tr><tr><td>_text</td><td>FHIR</td><td>Full text search by resource narrative</td></tr><tr><td>_content</td><td>FHIR</td><td>Full text search by resource content</td></tr><tr><td>_ilike</td><td>ILIKE</td><td>search by resource content</td></tr><tr><td>_elements</td><td>FHIR+</td><td>Include or exclude specific resource elements</td></tr><tr><td>_summary</td><td>FHIR</td><td>Include only summary elements</td></tr><tr><td>_list</td><td>FHIR</td><td>Search resources included into specific List</td></tr><tr><td>_sort</td><td>FHIR</td><td>Sort search results</td></tr><tr><td>_total</td><td>FHIR</td><td>Turn on/off total count</td></tr><tr><td>_include</td><td>FHIR</td><td>Include referenced resources into result</td></tr><tr><td>_revinclude</td><td>FHIR</td><td>Include into result resources, which reference searched resources</td></tr><tr><td>_explain</td><td></td><td>See query execution plan</td></tr><tr><td>_result</td><td></td><td>Change result format</td></tr></tbody></table><p>For example, to use full text search to find a practitioner, use the following query:</p><p>GET [base url]/Practitioner?_content=John</p><p>Learn more about special search parameters:</p><p><a href='https://docs.aidbox.app/api-1/fhir-api/search-1#special-parameters'>https://docs.aidbox.app/api-1/fhir-api/search-1#special-parameters</a></p><p>Authentication and Authorization Provider and pharmacy directories are publicly available information and do not require any additional security measures. Members’ claims and clinical data are considered Protected Health Information (PHI) and need to be secured.</p><p>Tutorial for additional help:</p><p><a href='https://docs.aidbox.app/app-development-guides/tutorials/authentication-and-authorization#checking-authorization'>https://docs.aidbox.app/app-development-guides/tutorials/authentication-and-authorization#checking-authorization</a></p><p>Implementation Guides for CMS Interoperability Rule The FHIR standard provides a set of resources and its attributes, but in most cases it does not impose strict restrictions on the required attributes and their values. In turn, implementation guides impose additional, more stringent restrictions. The following 4 IGs are used to comply with CMS Rule <a href='https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index'>https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index</a>:</p><p>Provider Directory API</p><p><a href='http://hl7.org/fhir/us/davinci-pdex-plan-net/index.html'>http://hl7.org/fhir/us/davinci-pdex-plan-net/index.html</a></p><p>Drug Formulary</p><p><a href='http://hl7.org/fhir/us/davinci-drug-formulary/'>http://hl7.org/fhir/us/davinci-drug-formulary/</a></p><p>Clinical Data</p><p><a href='http://hl7.org/fhir/us/core/history.html'>http://hl7.org/fhir/us/core/history.html</a></p><p>Claims and Encounter Data</p><p><a href='http://hl7.org/fhir/us/carin-bb/index.html'>http://hl7.org/fhir/us/carin-bb/index.html</a></p><p>Provider and pharmacy directories are publicly available information and do not require any additional security measures. Members’ claims and clinical data are considered Protected Health Information (PHI) and need to be secured. Members authorize applications they want to use to access their PHI. The process of app registration and authorization by members is standardized in the SMART on FHIR specification. Please see <a href='http://hl7.org/fhir/smart-app-launch/'>SMART App Launch Framework (hl7.org)</a></p></div></div><script src="/api_docs/static/jquery-3.4.1.min.js"></script><script src="/api_docs/static/collapse-structure.js"></script><script src="/api_docs/static/lmenu-view.js"></script><script src="/api_docs/static/tabs.js"></script></body></html>
