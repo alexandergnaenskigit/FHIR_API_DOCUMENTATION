@@ -1,23 +1,20 @@
 ---
-title: '4. Claims API'
+title: '4. Claims and Encounter Data API'
 ---
+# Claims and Encounter Data API
 
-The list below shows the main resources that were used by the FHIR Adapter.
+Claims and Encounter Data API follows [CARIN Blue Button Implementation Guide](http://hl7.org/fhir/us/carin-bb/index.html)
 
-- [Coverage](https://hsfhirdocs.github.io/api_docs/profiles/Coverage/CARIN-BB.html)
+This API uses the same principles as described in [Overview](ParamountInteroperabilityAPIs/basic.html) section and adds the following main resources:
 
-- [ExplanationOf Benefit Institutional](https://hsfhirdocs.github.io/api_docs/profiles/ExplanationOfBenefit/C4BB-ExplanationOfBenefit-Inpatient-Institutional.html)
+- [Coverage](../../profiles/Coverage/CARIN-BB.html)
 
-- [ExplanationOf Benefit Outpatient Institutional](https://hsfhirdocs.github.io/api_docs/profiles/ExplanationOfBenefit/C4BB-ExplanationOfBenefit-Outpatient-Institutional.html)
+- [ExplanationOf Benefit Institutional](../../profiles/ExplanationOfBenefit/C4BB-ExplanationOfBenefit-Inpatient-Institutional.html)
 
-- [ExplanationOfBenefit Professional NonClinician](https://hsfhirdocs.github.io/api_docs/profiles/ExplanationOfBenefit/C4BB-ExplanationOfBenefit-Professional-NonClinician.html)
+- [ExplanationOf Benefit Outpatient Institutional](../../profiles/ExplanationOfBenefit/C4BB-ExplanationOfBenefit-Outpatient-Institutional.html)
 
-- [ExplanationOfBenefit Pharmacy](https://hsfhirdocs.github.io/api_docs/profiles/ExplanationOfBenefit/C4BB-ExplanationOfBenefit-Pharmacy.html)
+- [ExplanationOfBenefit Professional NonClinician](../../profiles/ExplanationOfBenefit/C4BB-ExplanationOfBenefit-Professional-NonClinician.html)
+
+- [ExplanationOfBenefit Pharmacy](../../profiles/ExplanationOfBenefit/C4BB-ExplanationOfBenefit-Pharmacy.html)
 
 <b>*Permissions are required to get access to this api</b>
-
-## Queries examples:
-
-- Coverage
-
-[https://portal.aidbox.myparamount.org/fhir/Coverage?identifier=9000137124-408](https://portal.aidbox.myparamount.org/fhir/Coverage?identifier=9000137124-408)
