@@ -10,7 +10,7 @@ This implementation guide defines a FHIR interface to a health insurer's drug fo
 
 <b>*Permissions are required to get access to this api</b>
 
-This API uses the same principles as described in [Overview](ParamountInteroperabilityAPIs/basic.html) section and adds the following main resources:
+This API uses the same principles as described in [Overview](../ParamountInteroperabilityAPIs/basic.html) section and adds the following main resources:
 
 - [Medication Knowledge](../../profiles/MedicationKnowledge/DaVinci-PDEX-US-Drug-Formulary.html)
 

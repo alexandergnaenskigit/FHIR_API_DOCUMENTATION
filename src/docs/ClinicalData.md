@@ -7,7 +7,7 @@ Clinical Data API follows [US Core Implementation Guide](http://build.fhir.org/i
 
 The US Core Implementation Guide is based on FHIR Version R4 and defines the minimum set of constraints on the FHIR resources to create the US Core Profiles. It also defines the minimum set of FHIR RESTful interactions for each of the US Core Profiles to access patient data.
 
-This API uses the same principles as described in [Overview](ParamountInteroperabilityAPIs/basic.html) section and adds the following main resources:
+This API uses the same principles as described in [Overview](../ParamountInteroperabilityAPIs/basic.html) section and adds the following main resources:
 
 - [Goal](../../profiles/Goal/US-Core.html)
 - [Medication](../../profiles/Medication/basic.html)

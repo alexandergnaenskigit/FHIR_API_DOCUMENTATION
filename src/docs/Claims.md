@@ -5,7 +5,7 @@ title: '4. Claims and Encounter Data API'
 
 Claims and Encounter Data API follows [CARIN Blue Button Implementation Guide](http://hl7.org/fhir/us/carin-bb/index.html)
 
-This API uses the same principles as described in [Overview](ParamountInteroperabilityAPIs/basic.html) section and adds the following main resources:
+This API uses the same principles as described in [Overview](../ParamountInteroperabilityAPIs/basic.html) section and adds the following main resources:
 
 - [Coverage](../../profiles/Coverage/CARIN-BB.html)
 
