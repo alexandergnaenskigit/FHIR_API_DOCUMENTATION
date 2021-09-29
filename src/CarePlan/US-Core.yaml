@@ -11,27 +11,27 @@ elements:
     type: Narrative    
     description: Text summary of the resource, for human interpretation
     elements:
-      status: {type: code, required: true, description: The status of a resource narrative., constant: generated , valueset: { id: 'narrative-status' } }
+      status: {type: code, required: true, description: The status of a resource narrative., constant: generated , valueset: null }
       div: {type: xhtml, required: true, description: Limited xhtml content } 
   status:
     required: true
     type: code
     description: Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record.
     constant: active
-    valueset: { id: 'request-status' }
+    valueset: null
   intent:
     required: true
     type: code
     description: Codes indicating the degree of authority/intentionality associated with a care plan
     constant: plan
-    valueset: { id: 'care-plan-intent' }
+    valueset: null
   category:
     minItems: 1
     collection: true
     type: CodeableConcept
     description: Type of plan
     constant: assess-plan
-    valueset: { id: 'care-plan-category' }
+    valueset: null
   subject:
     required: true
     type: Reference(US Core Patient Profile)
@@ -48,5 +48,5 @@ elements:
     type: BackboneElement
     description: Action to occur as part of plan    
     elements:
-      detail: {type: BackboneElement, description: In-line definition of activity., elements: {status: {required:true, type: code, description: Codes that reflect the current state of a care plan activity within its overall life cycle., constant: scheduled , valueset: { id: 'care-plan-activity-status' }}, description: {type: string, description: CExtra info describing activity to perform.}} }
+      detail: {type: BackboneElement, description: In-line definition of activity., elements: {status: {required:true, type: code, description: Codes that reflect the current state of a care plan activity within its overall life cycle., constant: scheduled , valueset: null}, description: {type: string, description: CExtra info describing activity to perform.}} }
  

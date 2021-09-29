@@ -46,7 +46,7 @@ elements:
     required: true
     type: CodeableConcept
     description: Beneficiary relationship to the subscriber
-    valueset: { id: 'subscriber-relationship' }
+    valueset: null
   period:
     type: Period
     description: Coverage start and end dates

@@ -5,7 +5,7 @@ elements:
   code:
     type: CodeableConcept
     description: Codes that identify this medication. 
-    valueset: { id: 'us-core-medication-codes' }
+    valueset: null
   status: 
     type: code
     description: A code to indicate if the medication is in active use.

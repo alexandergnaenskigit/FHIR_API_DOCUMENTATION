@@ -58,7 +58,7 @@ elements:
     required: true
     type: code
     description: The result of the claim processing.
-    valueset: { id: 'remittance-outcome' }
+    valueset: null
   careTeam:
     collection: true
     type: BackboneElement

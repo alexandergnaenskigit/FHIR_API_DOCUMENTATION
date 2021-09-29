@@ -11,7 +11,7 @@ elements:
     collection: true
     type: CodeableConcept
     description: Category of condition
-    valueset: { id: 'us-core-condition-category' }
+    valueset: null
   subject:
     required: true
     type: Reference(US Core Patient Profile)
